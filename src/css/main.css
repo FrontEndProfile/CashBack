@@ -190,13 +190,12 @@ header .btn_ui .navbar_link_icon {
   padding-inline: 26px;
 }
 
-/* ---HERO  */
-.hero {
-  padding: 91px 0;
-  padding-bottom: 108px;
+main.home {
+  min-height: 100vh;
   position: relative;
+  padding-bottom: 240px;
 }
-.hero::before {
+main.home::before {
   position: absolute;
   content: "";
   width: 50%;
@@ -206,7 +205,26 @@ header .btn_ui .navbar_link_icon {
   background-image: url(../images/shadow_01_right.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: 30%;
+  background-position-y: -70%;
+}
+main.home::after {
+  position: absolute;
+  content: "";
+  width: 22%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/main_pg_end_shadow.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  z-index: -1;
+}
+
+/* ---HERO  */
+.hero {
+  padding: 91px 0;
+  padding-bottom: 108px;
 }
 .hero .hero_title {
   font-weight: 700;
@@ -301,4 +319,182 @@ header .btn_ui .navbar_link_icon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ---STORES  */
+.stores .stores_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 80px;
+}
+.stores .stores_title .stores_title_icon {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 18px;
+}
+.stores .stores_title::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 50%;
+  width: 2px;
+  height: 60px;
+  background: #C059F5;
+  box-shadow: 2px 0px 8px rgba(197, 139, 227, 0.2);
+  transform: rotate(90deg);
+}
+
+.home .card {
+  background: #1C1F37;
+  border-radius: 12px;
+  padding: 30px 30px 11px 30px;
+}
+.home .card .card_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.home .card .card_header .card_label {
+  margin-top: 6px;
+  width: 45px;
+  height: 15px;
+  background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
+  border-radius: 600px;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #141627;
+}
+.home .card .card_header .card_label_cashback .card_per_cashback {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: -0.018em;
+  color: #DB44D1;
+}
+.home .card .card_header .card_label_cashback .card_text_cashback {
+  font-weight: 400;
+  font-size: 10px;
+  text-align: right;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+.home .card .card_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.home .card .card_logo img {
+  width: 60%;
+}
+.home .card .card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .card .card_footer .card_tags {
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  max-width: 138px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.home .card .card_footer .card_btn {
+  width: 80px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  border: 1px solid #DB44D1;
+  border-radius: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: start;
+}
+.home .card .card_footer .card_btn img {
+  width: 16px;
+  margin-right: 8px;
+}
+.home .stores_cards {
+  grid-gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+}
+.home .stores_cards .col-md-3 {
+  padding: 0;
+  flex: 0 0 24.5%;
+}
+.home .stores_cards::before {
+  position: absolute;
+  content: "";
+  left: 30%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(75.96deg, #FFC83A 13.64%, #FF008A 46.53%, #6100FF 78.88%);
+  filter: blur(160px);
+  border-radius: 50%;
+}
+.home .stores_cards::after {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(0%, -50%);
+  background: linear-gradient(289.74deg, #001AFF 15.37%, #6EE5C2 87.68%);
+  filter: blur(160px);
+  border-radius: 50%;
+  z-index: -1;
+}
+.home .see_all_stores {
+  background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
+  border-radius: 67px;
+  width: 340px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141627;
+}
+.home .see_all_stores img {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.ads {
+  margin-top: 96px;
+}
+.ads .ads_img {
+  position: relative;
+}
+.ads .ads_img::after {
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 150%;
+  left: -15%;
+  top: -60px;
+  background-image: url(../images/ads_after.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
