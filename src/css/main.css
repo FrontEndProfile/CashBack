@@ -5,6 +5,7 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -662,6 +663,50 @@ main.home::after {
   justify-content: center;
 }
 
+.mini_footer {
+  height: 160px;
+  width: 100%;
+  background: #101221;
+  padding: 48px 0px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer_oxy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  margin-bottom: 14px;
+}
+.footer_oxy span {
+  font-weight: 700;
+}
+
+.footer_rights {
+  background: #9DA1C1;
+  border-radius: 60px;
+  width: 80px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer_reserved {
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  margin-bottom: 0;
+}
+
 @media (max-width: 1399px) {
   .home .stores_cards .col-md-3 {
     padding: 0;
@@ -700,8 +745,10 @@ main.home::after {
   }
   .collapse {
     background: #141627;
-    padding: 30px 0px;
     z-index: 999;
+  }
+  header .nav_search {
+    margin-top: 20px;
   }
   header nav.navbar {
     height: 70px;
@@ -817,8 +864,21 @@ main.home::after {
   .promo .container .promo_title {
     padding: 20px;
   }
-  body, .stores, .promo {
+  body,
+.stores,
+.promo {
     overflow-x: hidden;
+  }
+  header .navbar-nav.ms-auto {
+    flex-direction: column;
+  }
+  header .nav-item.mr_16 {
+    margin-right: 0px;
+    margin-bottom: 28px;
+  }
+  header .navbar-nav .nav-item.dropdown {
+    margin-right: 0;
+    margin-bottom: 4px;
   }
 }
 @media (max-width: 500px) {
