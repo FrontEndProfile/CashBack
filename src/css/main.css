@@ -817,6 +817,9 @@ main.home::after {
   .promo .container .promo_title {
     padding: 20px;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 500px) {
   .home .stores_cards .col-md-3 {
@@ -850,11 +853,14 @@ main.home::after {
     margin-right: 5px;
   }
   .stores .stores_title {
-    font-size: 25px;
+    font-size: 5.5vw;
     line-height: 26px;
     margin-bottom: 50px;
   }
   .stores .stores_title::after {
     top: 7px;
+  }
+  .hero .tags {
+    padding-inline: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
