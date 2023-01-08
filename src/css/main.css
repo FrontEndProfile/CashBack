@@ -817,7 +817,7 @@ main.home::after {
   .promo .container .promo_title {
     padding: 20px;
   }
-  body {
+  body, .stores, .promo {
     overflow-x: hidden;
   }
 }

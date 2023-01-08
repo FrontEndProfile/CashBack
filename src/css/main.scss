@@ -967,9 +967,10 @@ main.home {
       }
     }
   }
-  body {
+  body,.stores , .promo  {
     overflow-x: hidden;
   }
+  
 }
 @media (max-width: 500px) {
   .home .stores_cards .col-md-3 {
