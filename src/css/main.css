@@ -53,10 +53,12 @@ header .nav_search input.form-control {
   width: 495px;
   height: 40px;
   border: none;
-  font-weight: 400;
   font-size: 14px;
-  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+  color: #9DA1C1;
   letter-spacing: -0.018em;
+  text-align: center;
   color: #9DA1C1 !important;
   margin-left: 24px;
   text-align: start;
@@ -236,12 +238,12 @@ main.home::after {
   margin-bottom: 19px;
 }
 .hero .hero_contet {
-  color: #9DA1C1;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
-  text-align: center;
+  color: #9DA1C1;
   letter-spacing: -0.018em;
+  text-align: center;
   margin-bottom: 41px;
 }
 .hero .hero_search_bar {
@@ -291,8 +293,8 @@ main.home::after {
   background: #810CF2;
   border-radius: 0px 600px 600px 0px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 70px;
 }
 .hero .hero_btn_icon img {
@@ -305,10 +307,11 @@ main.home::after {
   padding-inline: 28px;
 }
 .hero .tags .tag {
-  font-weight: 700;
   font-size: 14px;
-  letter-spacing: -0.018em;
+  font-weight: 700;
+  line-height: normal;
   color: #9DA1C1;
+  letter-spacing: -0.018em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -434,8 +437,8 @@ main.home::after {
   border: 1px solid #DB44D1;
   border-radius: 600px;
   display: flex;
-  align-items: center;
-  text-align: start;
+  align-items: start;
+  justify-content: center;
 }
 .home .card .card_footer .card_btn img {
   width: 16px;
@@ -486,8 +489,8 @@ main.home::after {
   width: 340px;
   height: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: #141627;
 }
 .home .see_all_stores img {
@@ -590,8 +593,9 @@ main.home::after {
   padding-top: 70px;
   color: #9DA1C1;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: end;
+  flex-direction: column;
 }
 .promo .promo__slide .swiper-slide .promo__slide_img {
   width: 55%;
@@ -599,11 +603,12 @@ main.home::after {
   margin-bottom: 35px;
 }
 .promo .promo__slide .swiper-slide .promo__slide_content p {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 16px;
-  max-width: 195px;
+  color: #9DA1C1;
   letter-spacing: -0.018em;
+  max-width: 195px;
   color: #9DA1C1;
   margin-bottom: 22px;
 }
@@ -619,9 +624,7 @@ main.home::after {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  /* identical to box height, or 100% */
   letter-spacing: -0.018em;
-  /* New VIOLET */
   color: #810CF2;
 }
 .promo .promo__slide .swiper-slide .promo__slide_brand_discount .percentage_next_icon {
@@ -675,11 +678,12 @@ main.home::after {
 }
 
 .footer_oxy {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 16px;
-  text-align: center;
+  color: #9DA1C1;
   letter-spacing: -0.018em;
+  text-align: center;
   color: #9DA1C1;
   margin-bottom: 14px;
 }
@@ -695,7 +699,6 @@ main.home::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
 }
 
 .footer_reserved {
@@ -767,7 +770,7 @@ main.home::after {
     position: absolute;
   }
   header .navbar-nav.ms-auto {
-    flex-direction: row;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;

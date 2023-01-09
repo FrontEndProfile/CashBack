@@ -4,6 +4,14 @@ $Grey1 : #9DA1C1;
 $pink :#DB44D1;
 $violet :#810CF2;
 
+$Dark1 :#141627;
+$Dark2 :#101221;
+$Dark3 :#282C4B;
+$Dark4 :#1C1F37;
+
+$white : #FFFFFF;
+
+
 $font_base : 14px;
 $weight_default: 400;
 $weight_bold: 700;
@@ -11,7 +19,7 @@ $letter_space_default :-0.018em;
 $line_height: 32px;
 
 
-@mixin typography ($f_szie:$font_base, $f_weight:$weight_default, $l_spacing:$letter_space_default, $color:$Grey1, $l_height:$line_height) {
+@mixin typography ($f_szie:$font_base, $f_weight:$weight_default, $l_spacing:$letter_space_default, $color:$Grey1, $l_height:normal) {
   font-size: $f_szie;
   font-weight: $f_weight;
   line-height: $l_height;
@@ -20,7 +28,7 @@ $line_height: 32px;
 }
 
 
-@mixin flex_center($align: center, $justify: center,$dir:row) {
+@mixin flex_center($align: center, $justify: center,$dir:null) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
@@ -37,7 +45,7 @@ body,
 }
 
 body {
-  background: #141627;
+  background: $Dark1;
 }
 
 a {
@@ -65,7 +73,7 @@ html {
 /* ---HEADER  */
 header {
   nav.navbar {
-    background: #101221;
+    background: $Dark2;
     height: 100px;
 
     .navbar-brand {
@@ -77,7 +85,7 @@ header {
 
   .nav_search {
     position: relative;
-    background: #1C1F37;
+    background: $Dark4;
     border-radius: 8px;
     overflow: hidden;
 
@@ -85,10 +93,8 @@ header {
       width: 495px;
       height: 40px;
       border: none;
-      font-weight: 400;
-      font-size: 14px;
+      @include typography();
       text-align: center;
-      letter-spacing: -0.018em;
       color: $Grey1 !important;
       margin-left: 24px;
       text-align: start;
@@ -104,7 +110,7 @@ header {
     button.btn {
       position: absolute;
       right: 0;
-      background: #282C4B;
+      background: $Dark3;
       border-radius: 0px 8px 8px 0px;
       width: 80px;
       height: 100%;
@@ -122,8 +128,9 @@ header {
       left: 24px;
       top: 11px;
       width: 18px;
-      display: flex;
-      align-items: center;
+      @include flex_center($justify:null);
+      // display: flex;
+      // align-items: center;
     }
   }
 
@@ -193,20 +200,21 @@ header {
   }
 
   .navbar_bottom {
-    background-color: #1C1F37;
+    background-color: $Dark4;
     height: 60px;
   }
 
   .btn_ui {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_center();
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     width: 260px;
     height: 35px;
     background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
     border-radius: 8px;
     text-decoration: none;
-    color: #101221;
+    color: $Dark2;
     font-weight: 600;
     font-size: 14px;
     text-align: center;
@@ -220,7 +228,7 @@ header {
 }
 
 .btn_secondary {
-  background: #1C1F37;
+  background: $Dark4;
   border-radius: 8px;
   font-weight: 700;
   font-size: 14px;
@@ -233,7 +241,7 @@ header {
 .btn_primary {
   @extend .btn_secondary;
   background-color: $pink;
-  color: #101221;
+  color: $Dark2;
   padding-inline: 26px;
 }
 
@@ -281,17 +289,18 @@ main.home {
     line-height: 32px;
     text-align: center;
     letter-spacing: -0.018em;
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 19px;
   }
-
+// 187 
   .hero_contet {
-    color: $Grey1;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    // color: $Grey1;
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 24px;
+    // letter-spacing: -0.018em;
+    @include typography($l_height:24px);
     text-align: center;
-    letter-spacing: -0.018em;
     margin-bottom: 41px;
   }
 
@@ -303,13 +312,14 @@ main.home {
     position: relative;
 
     &::before {
+      $img : 299px;
       position: absolute;
       content: "";
       right: 1%;
       top: -102%;
       z-index: -1;
-      width: 299px;
-      height: 299px;
+      width: $img;
+      height: $img;
       background-image: url(../images/cashback_hero.png);
       background-size: 100%;
       background-repeat: no-repeat;
@@ -319,7 +329,7 @@ main.home {
   .hero_search {
     width: 100%;
     height: 60px;
-    border: 1px solid #810CF2;
+    border: 1px solid $violet;
     border-radius: 600px;
     margin-bottom: 8px;
 
@@ -338,11 +348,12 @@ main.home {
   }
 
   .hero_btn_icon {
-    background: #810CF2;
+    background: $violet;
     border-radius: 0px 600px 600px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex_center();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 70px;
 
     img {
@@ -351,24 +362,29 @@ main.home {
   }
 
   .tags {
-    display: flex;
-    align-items: center;
+    @include flex_center($justify:null);
+    // display: flex;
+    // align-items: center;
     grid-gap: 5px;
     padding-inline: 28px;
 
     .tag {
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: -0.018em;
-      color: $Grey1;
+      // font-weight: 700;
+      // font-size: 14px;
+      // letter-spacing: -0.018em;
+      // color: $Grey1;
+      // custom
+      @include typography($f_weight:700);
+
       width: fit-content;
       padding-inline: 22px;
       height: 25px;
-      background: #282C4B;
+      background: $Dark3;
       border-radius: 600px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex_center();
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
     }
   }
 }
@@ -385,7 +401,7 @@ main.home {
     line-height: 32px;
     text-align: center;
     letter-spacing: -0.018em;
-    color: #FFFFFF;
+    color: $white;
 
     .stores_title_icon {
       width: 32px;
@@ -413,7 +429,7 @@ main.home {
 
 .home {
   .card {
-    background: #1C1F37;
+    background: $Dark4;
     border-radius: 12px;
     padding: 30px 30px 11px 30px;
     min-height: 175px;
@@ -433,7 +449,7 @@ main.home {
         font-size: 10px;
         text-align: center;
         letter-spacing: -0.018em;
-        color: #141627;
+        color: $Dark1;
       }
 
       .card_label_cashback {
@@ -450,7 +466,7 @@ main.home {
           font-size: 10px;
           text-align: right;
           letter-spacing: -0.018em;
-          color: #9DA1C1;
+          color: $Grey1;
         }
 
       }
@@ -472,27 +488,28 @@ main.home {
     }
 
     .card_logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex_center();
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
       margin-bottom: 32px;
-
       img {
         max-width: 120px;
       }
     }
 
     .card_footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex_center($justify:space-between);
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
 
       .card_tags {
         font-weight: 400;
         font-size: 10px;
         letter-spacing: -0.018em;
 
-        color: #9DA1C1;
+        color: $Grey1;
 
         max-width: 138px;
         overflow: hidden;
@@ -509,9 +526,10 @@ main.home {
         color: $Grey1;
         border: 1px solid $pink;
         border-radius: 600px;
-        display: flex;
-        align-items: center;
-        text-align: start;
+        @include flex_center($align:start);
+        // display: flex;
+        // align-items: center;
+        // text-align: start;
 
         img {
           width: 16px;
@@ -569,10 +587,11 @@ main.home {
     border-radius: 67px;
     width: 340px;
     height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #141627;
+    @include flex_center();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    color: $Dark1;
 
     img {
       width: 40px;
@@ -619,7 +638,7 @@ main.home {
     font-size: 36px;
     line-height: 32px;
     letter-spacing: -0.018em;
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 37px;
 
     &_icon {
@@ -629,16 +648,18 @@ main.home {
   }
 
   .slide_control {
-    display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    @include flex_center($align:flex-end, $justify:end );
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: end;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
-    width: 40px;
-    height: 40px;
-    background: #1C1F37;
+    $icon_btn : 40px;
+    width: $icon_btn;
+    height: $icon_btn;
+    background: $Dark4;
     border-radius: 50%;
     opacity: 1;
     position: static;
@@ -659,7 +680,7 @@ main.home {
   }
 
   .swiper-button-prev::after {
-    color: #810CF2;
+    color: $violet;
   }
 
   .slide_btn_content {
@@ -667,13 +688,14 @@ main.home {
     border-radius: 67px;
     width: 120px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_center();
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.018em;
-    color: #141627;
+    color: $Dark1;
     margin-left: 2px;
     margin-right: 8px;
 
@@ -689,7 +711,7 @@ main.home {
 
   .promo__slide {
     .swiper-slide {
-      background: #1C1F37;
+      background: $Dark4;
       border-radius: 12px;
       width: 304px;
       min-height: 330px;
@@ -697,9 +719,10 @@ main.home {
       padding-bottom: 35px;
       padding-top: 70px;
       color: $Grey1;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
+      @include flex_center($dir:column,$justify:end);
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: end;
 
       .promo__slide_img {
         width: 55%;
@@ -709,15 +732,14 @@ main.home {
 
       .promo__slide_content {
         p {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 16px;
+          // font-weight: 400;
+          // font-size: 14px;
+          // line-height: 16px;
+          // letter-spacing: -0.018em;
+          @include typography($l_height:16px);
           max-width: 195px;
-          letter-spacing: -0.018em;
-
-          color: #9DA1C1;
+          color: $Grey1;
           margin-bottom: 22px;
-
           span {
             font-weight: 700;
           }
@@ -733,12 +755,8 @@ main.home {
           font-weight: 700;
           font-size: 16px;
           line-height: 16px;
-
-          /* identical to box height, or 100% */
           letter-spacing: -0.018em;
-
-          /* New VIOLET */
-          color: #810CF2;
+          color: $violet;
 
 
         }
@@ -769,7 +787,7 @@ main.home {
         /* identical to box height, or 160% */
         letter-spacing: -0.018em;
 
-        color: #9DA1C1;
+        color: $Grey1;
         margin-bottom: 16px;
 
         span {
@@ -787,12 +805,11 @@ main.home {
         font-weight: 700;
         font-size: 20px;
         letter-spacing: -0.018em;
-        color: #141627;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
+        color: $Dark1;
+        @include flex_center();
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
       }
     }
   }
@@ -804,24 +821,25 @@ main.home {
 .mini_footer {
   height: 160px;
   width: 100%;
-  background: #101221;
+  background: $Dark2;
   padding: 48px 0px 28px;
   @include flex_center($dir:column);
 }
 
 .footer_oxy {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 16px;
+  // letter-spacing: -0.018em;
+  @include typography($l_height:16px);
   text-align: center;
-  letter-spacing: -0.018em;
-  color: #9DA1C1;
+  color: $Grey1;
   margin-bottom: 14px;
   span { font-weight: 700;}
 }
 
 .footer_rights {
-  background: #9DA1C1;
+  background: $Grey1;
   border-radius: 60px;
   width: 80px;
   height: 24px;
@@ -832,294 +850,8 @@ main.home {
   line-height: 16px;
   text-align: center;
   letter-spacing: -0.018em;
-  color: #9DA1C1;
+  color: $Grey1;
   margin-bottom: 0;
 }
 
-
-
-
-
-
-
-
-@media (max-width: 1399px) {
-  .home .stores_cards .col-md-3 {
-    padding: 0;
-    flex: 0 0 auto;
-    width: 24%;
-  }
-
-  main.home::before {
-    background-position-y: -10%;
-  }
-}
-
-@media (max-width: 1199px) {
-  .home .stores_cards .col-md-3 {
-    padding: 0;
-    flex: 0 0 auto;
-    width: 32.5%;
-  }
-
-  header .nav_search input.form-control {
-    width: 310px;
-    margin-left: 22px;
-    padding-left: 30px;
-  }
-}
-
-@media (max-width: 991px) {
-
-  .navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    filter: brightness(0) saturate(100%) invert(62%) sepia(53%) saturate(7392%) hue-rotate(275deg) brightness(88%) contrast(94%) !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  }
-
-  .navbar_bottom {
-    display: none;
-  }
-
-  .collapse {
-    background: #141627;
-    z-index: 999;
-  }
-
-  header .nav_search {
-    margin-top: 20px;
-  }
-
-  header nav.navbar {
-    height: 70px;
-    padding-block: 8px !important;
-  }
-
-  header nav.navbar .navbar-brand {
-    width: 85px;
-  }
-
-  header {
-    .nav-item.mr_16 {
-      margin-right: 8px;
-      // margin-bottom: 28px;
-    }
-
-    .nav-item.dropdown {
-      // margin-bottom: 8px;
-      margin-right: 0;
-    }
-
-    .dropdown-menu.show {
-      position: absolute;
-    }
-
-    .navbar-nav.ms-auto {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding-block: 14px;
-    }
-
-    .navbar_bottom {
-      background-color: #1C1F37;
-      height: fit-content;
-      padding-block: 9px !important;
-
-      .btn_ui {
-        margin-block: 8px;
-      }
-    }
-  }
-
-  .hero .hero_search_bar::before {
-    position: absolute;
-    content: "";
-    right: 4%;
-    top: -68%;
-    z-index: -1;
-    width: 200px;
-    height: 200px;
-    background-image: url(../images/cashback_hero.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .hero .hero_search_bar {
-    padding: 30px 33px 20px 30px;
-  }
-
-  .hero {
-    padding: 71px 0;
-    padding-bottom: 85px;
-  }
-
-  .hero .hero_contet {
-    br {
-      display: none;
-    }
-  }
-
-  .home .card {
-    background: #1C1F37;
-    border-radius: 12px;
-    padding: 12px 13px 10px 13px;
-    min-height: 175px;
-  }
-}
-
-@media (max-width: 767px) {
-  .home .stores_cards .col-md-3 {
-    padding: 0;
-    flex: 0 0 auto;
-    width: 49%;
-  }
-
-  .stores .stores_title {
-    font-size: 32px;
-    line-height: 30px;
-    margin-bottom: 52px;
-  }
-
-  .hero .hero_search {
-    height: 45px;
-  }
-
-  .ads {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-
-  .promo .promo_title {
-    font-size: 26px;
-    line-height: 28px;
-    margin-bottom: 28px;
-  }
-
-  main.home {
-    padding-bottom: 133px;
-  }
-
-  .slide_control {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 12px;
-  }
-
-  .promo .slide_control {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 580px) {
-  .promo .swiper {
-    padding-inline: 30px;
-  }
-
-  .promo .promo__slide .swiper-slide {
-    width: 90% !important;
-  }
-
-  section {
-    .container {
-      padding: 20px;
-    }
-  }
-
-  .promo {
-    .container {
-      padding: 0px !important;
-
-      .promo_title {
-        padding: 20px;
-      }
-    }
-  }
-
-  body,
-  .stores,
-  .promo {
-    overflow-x: hidden;
-  }
-
-  header .navbar-nav.ms-auto {
-    flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // padding-block: 14px;
-  }
-
-  header .nav-item.mr_16 {
-    margin-right: 0px;
-    margin-bottom: 28px;
-  }
-
-  header .navbar-nav .nav-item.dropdown {
-    margin-right: 0;
-    margin-bottom: 4px;
-  }
-
-}
-
-@media (max-width: 500px) {
-  .home .stores_cards .col-md-3 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  .hero .hero_title {
-    font-size: 32px;
-    line-height: 24px;
-    margin-bottom: 19px;
-  }
-
-  .hero .hero_contet {
-    margin-bottom: 70px;
-  }
-
-  .hero {
-    padding: 34px 0;
-    padding-bottom: 45px;
-  }
-
-  .hero .hero_search_bar {
-    padding: 22px 23px 20px 23px;
-  }
-
-  .hero .hero_btn_icon {
-    width: 57px;
-  }
-
-  .hero .hero_btn_icon img {
-    width: 18px;
-  }
-
-  .stores .stores_title .stores_title_icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-  }
-
-  .stores .stores_title {
-    font-size: 5.5vw;
-    line-height: 26px;
-    margin-bottom: 50px;
-  }
-
-  .stores .stores_title::after {
-    top: 7px;
-  }
-
-  .hero .tags {
-    padding-inline: 0px;
-  }
-
-}
+@import 'responsive'

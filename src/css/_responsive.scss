@@ -1,0 +1,281 @@
+@media (max-width: 1399px) {
+    .home .stores_cards .col-md-3 {
+      padding: 0;
+      flex: 0 0 auto;
+      width: 24%;
+    }
+  
+    main.home::before {
+      background-position-y: -10%;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .home .stores_cards .col-md-3 {
+      padding: 0;
+      flex: 0 0 auto;
+      width: 32.5%;
+    }
+  
+    header .nav_search input.form-control {
+      width: 310px;
+      margin-left: 22px;
+      padding-left: 30px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+  
+    .navbar-toggler-icon {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: middle;
+      filter: brightness(0) saturate(100%) invert(62%) sepia(53%) saturate(7392%) hue-rotate(275deg) brightness(88%) contrast(94%) !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+  
+    .navbar_bottom {
+      display: none;
+    }
+  
+    .collapse {
+      background: $Dark1;
+      z-index: 999;
+    }
+  
+    header .nav_search {
+      margin-top: 20px;
+    }
+  
+    header nav.navbar {
+      height: 70px;
+      padding-block: 8px !important;
+    }
+  
+    header nav.navbar .navbar-brand {
+      width: 85px;
+    }
+  
+    header {
+      .nav-item.mr_16 {
+        margin-right: 8px;
+        // margin-bottom: 28px;
+      }
+  
+      .nav-item.dropdown {
+        // margin-bottom: 8px;
+        margin-right: 0;
+      }
+  
+      .dropdown-menu.show {
+        position: absolute;
+      }
+  
+      .navbar-nav.ms-auto {
+        @include flex_center();
+        // flex-direction: row;
+        // align-items: center;
+        // justify-content: center;
+        flex-wrap: wrap;
+        padding-block: 14px;
+      }
+  
+      .navbar_bottom {
+        background-color: $Dark4;
+        height: fit-content;
+        padding-block: 9px !important;
+  
+        .btn_ui {
+          margin-block: 8px;
+        }
+      }
+    }
+  
+    .hero .hero_search_bar::before {
+      position: absolute;
+      content: "";
+      right: 4%;
+      top: -68%;
+      z-index: -1;
+      width: 200px;
+      height: 200px;
+      background-image: url(../images/cashback_hero.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  
+    .hero .hero_search_bar {
+      padding: 30px 33px 20px 30px;
+    }
+  
+    .hero {
+      padding: 71px 0;
+      padding-bottom: 85px;
+    }
+  
+    .hero .hero_contet {
+      br {
+        display: none;
+      }
+    }
+  
+    .home .card {
+      background: $Dark4;
+      border-radius: 12px;
+      padding: 12px 13px 10px 13px;
+      min-height: 175px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .home .stores_cards .col-md-3 {
+      padding: 0;
+      flex: 0 0 auto;
+      width: 49%;
+    }
+  
+    .stores .stores_title {
+      font-size: 32px;
+      line-height: 30px;
+      margin-bottom: 52px;
+    }
+  
+    .hero .hero_search {
+      height: 45px;
+    }
+  
+    .ads {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+  
+    .promo .promo_title {
+      font-size: 26px;
+      line-height: 28px;
+      margin-bottom: 28px;
+    }
+  
+    main.home {
+      padding-bottom: 133px;
+    }
+  
+    .slide_control {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+  
+    .promo .slide_control {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .promo .swiper {
+      padding-inline: 30px;
+    }
+  
+    .promo .promo__slide .swiper-slide {
+      width: 90% !important;
+    }
+  
+    section {
+      .container {
+        padding: 20px;
+      }
+    }
+  
+    .promo {
+      .container {
+        padding: 0px !important;
+  
+        .promo_title {
+          padding: 20px;
+        }
+      }
+    }
+  
+    body,
+    .stores,
+    .promo {
+      overflow-x: hidden;
+    }
+  
+    header .navbar-nav.ms-auto {
+      flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      // flex-wrap: wrap;
+      // padding-block: 14px;
+    }
+  
+    header .nav-item.mr_16 {
+      margin-right: 0px;
+      margin-bottom: 28px;
+    }
+  
+    header .navbar-nav .nav-item.dropdown {
+      margin-right: 0;
+      margin-bottom: 4px;
+    }
+  
+  }
+  
+  @media (max-width: 500px) {
+    .home .stores_cards .col-md-3 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  
+    .hero .hero_title {
+      font-size: 32px;
+      line-height: 24px;
+      margin-bottom: 19px;
+    }
+  
+    .hero .hero_contet {
+      margin-bottom: 70px;
+    }
+  
+    .hero {
+      padding: 34px 0;
+      padding-bottom: 45px;
+    }
+  
+    .hero .hero_search_bar {
+      padding: 22px 23px 20px 23px;
+    }
+  
+    .hero .hero_btn_icon {
+      width: 57px;
+    }
+  
+    .hero .hero_btn_icon img {
+      width: 18px;
+    }
+  
+    .stores .stores_title .stores_title_icon {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+    }
+  
+    .stores .stores_title {
+      font-size: 5.5vw;
+      line-height: 26px;
+      margin-bottom: 50px;
+    }
+  
+    .stores .stores_title::after {
+      top: 7px;
+    }
+  
+    .hero .tags {
+      padding-inline: 0px;
+    }
+  
+  }
