@@ -4,7 +4,20 @@ $Grey1 : #9DA1C1;
 $pink :#DB44D1;
 $violet :#810CF2;
 
+$font_base : 14px;
+$weight_default: 400;
+$weight_bold: 700;
+$letter_space_default :-0.018em;
+$line_height: 32px;
 
+
+@mixin typography ($f_szie:$font_base, $f_weight:$weight_default, $l_spacing:$letter_space_default, $color:$Grey1, $l_height:$line_height) {
+  font-size: $f_szie;
+  font-weight: $f_weight;
+  line-height: $l_height;
+  color: $color;
+  letter-spacing: $l_spacing;
+}
 
 
 @mixin flex_center($align: center, $justify: center,$dir:row) {
