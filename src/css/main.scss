@@ -19,7 +19,7 @@ $letter_space_default :-0.018em;
 $line_height: 32px;
 
 
-@mixin typography ($f_szie:$font_base, $f_weight:$weight_default, $l_spacing:$letter_space_default, $color:$Grey1, $l_height:normal) {
+@mixin typography ($f_szie: $font_base, $f_weight: $weight_default, $l_spacing: $letter_space_default, $color: $Grey1, $l_height: normal) {
   font-size: $f_szie;
   font-weight: $f_weight;
   line-height: $l_height;
@@ -28,7 +28,7 @@ $line_height: 32px;
 }
 
 
-@mixin flex_center($align: center, $justify: center,$dir:null) {
+@mixin flex_center($align: center, $justify: center, $dir: null) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
@@ -128,7 +128,7 @@ header {
       left: 24px;
       top: 11px;
       width: 18px;
-      @include flex_center($justify:null);
+      @include flex_center($justify: null);
       // display: flex;
       // align-items: center;
     }
@@ -292,14 +292,15 @@ main.home {
     color: $white;
     margin-bottom: 19px;
   }
-// 187 
+
+  // 187 
   .hero_contet {
     // color: $Grey1;
     // font-weight: 400;
     // font-size: 14px;
     // line-height: 24px;
     // letter-spacing: -0.018em;
-    @include typography($l_height:24px);
+    @include typography($l_height: 24px);
     text-align: center;
     margin-bottom: 41px;
   }
@@ -362,7 +363,7 @@ main.home {
   }
 
   .tags {
-    @include flex_center($justify:null);
+    @include flex_center($justify: null);
     // display: flex;
     // align-items: center;
     grid-gap: 5px;
@@ -374,7 +375,7 @@ main.home {
       // letter-spacing: -0.018em;
       // color: $Grey1;
       // custom
-      @include typography($f_weight:700);
+      @include typography($f_weight: 700);
 
       width: fit-content;
       padding-inline: 22px;
@@ -493,13 +494,14 @@ main.home {
       // align-items: center;
       // justify-content: center;
       margin-bottom: 32px;
+
       img {
         max-width: 120px;
       }
     }
 
     .card_footer {
-      @include flex_center($justify:space-between);
+      @include flex_center($justify: space-between);
       // display: flex;
       // align-items: center;
       // justify-content: space-between;
@@ -526,7 +528,7 @@ main.home {
         color: $Grey1;
         border: 1px solid $pink;
         border-radius: 600px;
-        @include flex_center($align:start);
+        @include flex_center($align: start);
         // display: flex;
         // align-items: center;
         // text-align: start;
@@ -648,7 +650,7 @@ main.home {
   }
 
   .slide_control {
-    @include flex_center($align:flex-end, $justify:end );
+    @include flex_center($align: flex-end, $justify: end);
     // display: flex;
     // align-items: flex-end;
     // justify-content: end;
@@ -719,7 +721,7 @@ main.home {
       padding-bottom: 35px;
       padding-top: 70px;
       color: $Grey1;
-      @include flex_center($dir:column,$justify:end);
+      @include flex_center($dir: column, $justify: end);
       // display: flex;
       // flex-direction: column;
       // justify-content: end;
@@ -736,10 +738,11 @@ main.home {
           // font-size: 14px;
           // line-height: 16px;
           // letter-spacing: -0.018em;
-          @include typography($l_height:16px);
+          @include typography($l_height: 16px);
           max-width: 195px;
           color: $Grey1;
           margin-bottom: 22px;
+
           span {
             font-weight: 700;
           }
@@ -818,12 +821,13 @@ main.home {
 
 
 // NEXT PAGE 
+// affiliate_program =====================================
 .mini_footer {
   height: 160px;
   width: 100%;
   background: $Dark2;
   padding: 48px 0px 28px;
-  @include flex_center($dir:column);
+  @include flex_center($dir: column);
 }
 
 .footer_oxy {
@@ -831,11 +835,14 @@ main.home {
   // font-size: 14px;
   // line-height: 16px;
   // letter-spacing: -0.018em;
-  @include typography($l_height:16px);
+  @include typography($l_height: 16px);
   text-align: center;
   color: $Grey1;
   margin-bottom: 14px;
-  span { font-weight: 700;}
+
+  span {
+    font-weight: 700;
+  }
 }
 
 .footer_rights {
@@ -845,6 +852,7 @@ main.home {
   height: 24px;
   @include flex_center;
 }
+
 .footer_reserved {
   font-size: 10px;
   line-height: 16px;
@@ -853,5 +861,164 @@ main.home {
   color: $Grey1;
   margin-bottom: 0;
 }
+
+.affiliate_program {
+  padding-top: 141px;
+
+  .hero {
+    margin-bottom: 95px;
+
+    .hero_img {
+      width: 100%;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 76px;
+        background-image: url(../images/hero_banner_after.png);
+        background-size: cover;
+        z-index: -1;
+        width: 479px;
+        height: 397px;
+        filter: blur(109.5px);
+      }
+    }
+  }
+
+  .how_work {
+    text-align: center;
+
+    .how_work_title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 32px;
+      letter-spacing: -0.018em;
+      color: $white;
+      margin-bottom: 8px;
+    }
+
+    .how_work_title_sub {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.018em;
+      color: $Grey1;
+      margin-bottom: 69px;
+    }
+
+    .cards {
+      background: $Dark4;
+      border-radius: 12px;
+      margin-bottom: 70px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 8px;
+        top: -53px;
+        background-image: url(../images/affiliate_program_multi_cards.png);
+        background-size: cover;
+        width: 657px;
+        height: 577px;
+        z-index: -1;
+        filter: blur(167.5px);
+      }
+
+      .card {
+        background: transparent;
+        border: none;
+        position: relative;
+        padding: 58px 60px;
+
+        .card_break {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translate(0%, -50%);
+          background: $Dark1;
+          border-radius: 5px;
+          width: 2px;
+          height: 150px;
+
+          .card_break_btn {
+            width: 26px;
+            height: 26px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .card_img {
+          margin-bottom: 16px;
+          width: 29px;
+        }
+
+        .card_contect {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: -0.018em;
+          color: $white;
+          text-align: start;
+        }
+      }
+    }
+  }
+
+  .statistics {
+    margin-bottom: 50px;
+    .statistics_card {
+      background: $Dark4;
+      border-radius: 12px;
+      padding: 59px 30px 31px 50px;
+      position: relative;
+    }
+    .statistics_card_icon {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      width: 29px;
+    }
+
+    .statistics_card_balance {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 32px;
+      letter-spacing: -0.018em;
+      color: $white;
+      margin-bottom: 10px;
+    }
+
+    .statistics_card_balance_title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.018em;
+      color: $Grey1;
+    }
+
+    .container .col-md-3 {
+      padding: 0 !important;
+      width: 24.6%;
+    }
+    .statistics_gap {
+      justify-content: space-between;
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 @import 'responsive'
