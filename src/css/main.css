@@ -437,8 +437,8 @@ main.home::after {
   border: 1px solid #DB44D1;
   border-radius: 600px;
   display: flex;
-  align-items: start;
-  justify-content: center;
+  align-items: center;
+  text-align: start;
 }
 .home .card .card_footer .card_btn img {
   width: 16px;
@@ -922,6 +922,7 @@ main.home::after {
   text-align: center;
   padding-top: 50px;
   padding-inline: 18px;
+  margin-bottom: 20px;
 }
 .aliexpress_card .aliexpress_card_title {
   width: 191px;
@@ -1032,6 +1033,147 @@ main.home::after {
 }
 .categories .categories_row.info {
   margin-bottom: 20px;
+}
+
+.similar_cards {
+  margin-left: auto;
+  width: 303px;
+}
+.similar_cards .similar_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  margin-bottom: 31px;
+}
+.similar_cards .similar_card {
+  background: #1C1F37;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 150px;
+  padding-inline: 30px;
+  padding-bottom: 21px;
+  padding-top: 40px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.similar_cards .similar_card_tittle {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+.similar_cards .similar_card_img {
+  max-width: 101px;
+  margin-bottom: 26px;
+}
+.similar_cards .similar_card_percentage {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: -0.018em;
+  color: #DB44D1;
+  margin-bottom: 0;
+}
+.similar_cards .similar_card_percentage_sub {
+  font-weight: 400;
+  font-size: 10px;
+  text-align: right;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+.similar_cards .pos_percentage {
+  position: absolute;
+  right: 30px;
+  top: 38px;
+}
+
+.share .share_title {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #282C4B;
+  margin: 2px;
+}
+.share .share_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.share .share_links {
+  margin-bottom: 38px;
+}
+
+.about_shop {
+  max-width: 271px;
+}
+.about_shop .about_shop_title {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #282C4B;
+  margin-bottom: 2px;
+}
+.about_shop .about_shop_content {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  margin-bottom: 0;
+}
+
+.categories_btn {
+  background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
+  border-radius: 40px;
+  width: 150px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: -0.018em;
+  text-transform: uppercase;
+  color: #141627;
+  margin-inline: auto;
+  margin-top: 11px;
+}
+
+.categories.second {
+  margin-bottom: 50px;
+}
+
+.categories.icon_after {
+  position: relative;
+}
+.categories.icon_after::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -98px;
+  background-image: url(../images/categories_after_icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 329px;
+  filter: blur(167.5px);
+  z-index: -1;
+}
+
+.categories.second.icon_after::after {
+  background-image: url(../images/categories_after_icon__002.png);
+  top: -79px;
+  right: -78px;
+  left: auto;
+  width: 479px;
+  height: 647px;
+  filter: blur(109.5px);
 }
 
 @media (max-width: 1399px) {
