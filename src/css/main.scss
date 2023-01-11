@@ -69,6 +69,7 @@ a {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 html {
@@ -856,6 +857,13 @@ main.home {
   width: 80px;
   height: 24px;
   @include flex_center;
+  font-weight: 400;
+font-size: 14px;
+text-align: center;
+letter-spacing: -0.018em;
+color: #101221;
+
+
 }
 
 .footer_reserved {
@@ -1046,9 +1054,11 @@ main.home {
       @include typography($l_height: 24px);
       color: $Grey1;
       margin-bottom: 16px;
+      text-align: center;
 
-      span {
+      span,a {
         color: $pink;
+        text-decoration: underline;
       }
     }
 
@@ -1537,6 +1547,7 @@ main.home {
 
 .sort_layout {
   padding-left: 50px;
+  position: relative;
   .sort_head {
     display: flex;
     align-items: center;
@@ -1631,5 +1642,51 @@ main.home {
   }
   
 }
+.sort_layout {
+  &::before {
+    position: absolute;
+    content: "";
+    left: 30%;
+    top: 50%;
+    width: 50%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(75.96deg, #FFC83A 13.64%, #FF008A 46.53%, #6100FF 78.88%);
+    filter: blur(160px);
+    border-radius: 50%;
+  }
+  
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0%;
+    top: 50%;
+    width: 50%;
+    height: 40%;
+    transform: translate(-0%, -50%);
+    background: linear-gradient(289.74deg, #001AFF 15.37%, #6EE5C2 87.68%);
+    transform: matrix(-0.96, 0.23, -0.29, -0.97, 0, 0);
+    filter: blur(160px);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+.store_details {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 29%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/main_pg_end_shadow.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 120%;
+  }
+}
+
+
 
 @import 'responsive'

@@ -23,6 +23,7 @@ a:active {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 html {
@@ -699,6 +700,11 @@ main.home::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #101221;
 }
 
 .footer_reserved {
@@ -879,9 +885,11 @@ main.home::after {
   letter-spacing: -0.018em;
   color: #9DA1C1;
   margin-bottom: 16px;
+  text-align: center;
 }
-.affiliate_program .statistics .statistics_refer span {
+.affiliate_program .statistics .statistics_refer span, .affiliate_program .statistics .statistics_refer a {
   color: #DB44D1;
+  text-decoration: underline;
 }
 .affiliate_program .statistics .statistics_terms > .see_all_stores {
   display: flex;
@@ -1310,6 +1318,7 @@ main.home::after {
 
 .sort_layout {
   padding-left: 50px;
+  position: relative;
 }
 .sort_layout .sort_head {
   display: flex;
@@ -1405,6 +1414,49 @@ main.home::after {
   width: 33%;
 }
 
+.sort_layout::before {
+  position: absolute;
+  content: "";
+  left: 30%;
+  top: 50%;
+  width: 50%;
+  height: 40%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(75.96deg, #FFC83A 13.64%, #FF008A 46.53%, #6100FF 78.88%);
+  filter: blur(160px);
+  border-radius: 50%;
+}
+.sort_layout::after {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: 50%;
+  width: 50%;
+  height: 40%;
+  transform: translate(0%, -50%);
+  background: linear-gradient(289.74deg, #001AFF 15.37%, #6EE5C2 87.68%);
+  transform: matrix(-0.96, 0.23, -0.29, -0.97, 0, 0);
+  filter: blur(160px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.store_details {
+  position: relative;
+}
+.store_details::after {
+  position: absolute;
+  content: "";
+  width: 29%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/main_pg_end_shadow.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 120%;
+}
+
 @media (max-width: 1399px) {
   .home .stores_cards .col-md-3 {
     padding: 0;
@@ -1413,6 +1465,10 @@ main.home::after {
   }
   main.home::before {
     background-position-y: -10%;
+  }
+  .similar_cards {
+    margin-left: 12px;
+    width: 300px;
   }
 }
 @media (max-width: 1199px) {
@@ -1434,6 +1490,101 @@ main.home::after {
   .sort_layout .sort_layout_cards .row {
     justify-content: space-evenly !important;
   }
+  .hero {
+    padding: 15px 0;
+    padding-bottom: 25px;
+  }
+  .affiliate_program {
+    padding-top: 100px;
+  }
+  .affiliate_program .hero {
+    margin-bottom: 20px;
+  }
+  .affiliate_program .how_work .cards .card {
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 44px 35px;
+  }
+  .affiliate_program .statistics .statistics_title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .affiliate_program .statistics .statistics_card {
+    border-radius: 12px;
+    padding: 59px 20px 31px 36px;
+  }
+  .affiliate_program .statistics .statistics_gap {
+    margin-bottom: 40px;
+  }
+  .affiliate_program .statistics .see_all_stores {
+    margin-bottom: 55px;
+  }
+  .container-lg.container-fluid {
+    padding-inline: 18px;
+  }
+  .aliexpress_card {
+    width: 222px;
+    height: 240px;
+    padding-top: 35px;
+    padding-inline: 14px;
+    margin-bottom: 10px;
+  }
+  .aliexpress_card .aliexpress_card_title {
+    width: 138px;
+    margin-inline: auto;
+    margin-bottom: 10px;
+  }
+  .aliexpress_card .aliexpress_card_content {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 18px;
+  }
+  .aliexpress_card .aliexpress_card_per {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.018em;
+    color: #810CF2;
+    margin-bottom: 22px;
+  }
+  .aliexpress_card .aliexpress_card_btn {
+    height: 35px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 32px;
+  }
+  .share .share_links {
+    margin-bottom: 22px;
+  }
+  .about_shop .about_shop_content {
+    line-height: 16px;
+  }
+  .about_shop {
+    max-width: 212px;
+  }
+  .categories {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+  }
+  .categories .categories_title {
+    margin-bottom: 14px;
+  }
+  .categories .categories_row {
+    padding-inline: 20px;
+    margin-bottom: 17px;
+  }
+  .categories .categories_row .categories_row_pre {
+    margin-right: 0;
+    width: 187px;
+  }
+  .similar_cards .similar_title {
+    margin-bottom: 20px;
+  }
+  .categories .categories_row .categories_row_content {
+    max-width: 245px;
+  }
 }
 @media (max-width: 991px) {
   .navbar-toggler-icon {
@@ -1450,8 +1601,11 @@ main.home::after {
     display: none;
   }
   .collapse {
-    background: #141627;
+    background: #3A3D5B;
     z-index: 999;
+    border-radius: 4px;
+    padding-inline: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   header .nav_search {
     margin-top: 20px;
@@ -1480,7 +1634,7 @@ main.home::after {
     padding-block: 14px;
   }
   header .navbar_bottom {
-    background-color: #1C1F37;
+    background-color: #3A3D5B;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1530,6 +1684,115 @@ main.home::after {
   header .navbar-nav .nav-item .nav-link.mobo_link_02 {
     margin-bottom: 8px;
   }
+  .hero {
+    padding-top: 0px;
+    padding-inline: 20px;
+  }
+  .affiliate_program .hero .hero_img::after {
+    width: 339px;
+    height: 275px;
+  }
+  .hero {
+    padding-bottom: 28px;
+  }
+  .affiliate_program .how_work .how_work_title_sub {
+    margin-bottom: 33px;
+  }
+  .statistics_gap .col-md-3 {
+    width: 24%;
+  }
+  .affiliate_program .how_work .cards::after {
+    width: 347px;
+    height: 339px;
+  }
+  .affiliate_program .how_work .cards .card .card_contect br {
+    display: none;
+  }
+  .categories_boxes {
+    margin-left: auto;
+  }
+  .categories .categories_row .categories_row_content {
+    max-width: 100%;
+  }
+  .categories .categories_row .categories_row_icon_area {
+    width: 187px;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+  .categories .categories_row.info {
+    margin-bottom: 10px;
+  }
+  .categories .categories_row .categories_row_icon {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+  .similar_cards_tab_mood {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    margin-bottom: 30px;
+  }
+  .similar_cards {
+    width: 100%;
+  }
+  .similar_card_img {
+    max-width: 85px;
+  }
+  .similar_card {
+    min-height: 127px;
+    padding-inline: 26px;
+    padding-bottom: 8px;
+    padding-top: 40px;
+    margin-bottom: 8px;
+  }
+  .store_details .store_details_title {
+    font-size: 30px;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .categories.icon_after::after {
+    content: "";
+    top: 20px;
+    left: -72px;
+    background-image: url(../images/categories_after_icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 243px;
+    height: 260px;
+  }
+  .store_details .store_details_title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  .sort_layout .sort_layout_cards .col-md-4 {
+    width: 49%;
+    margin-bottom: 0px;
+  }
+  .sort_layout {
+    padding-left: 15px;
+  }
+  .sort_layout .sort_layout_cards {
+    margin-bottom: 16px;
+  }
+  .cashback_stores .cashback_stores_title {
+    margin-bottom: 20px;
+  }
+  .sort_layout .sort_layout_pagination {
+    margin-bottom: 49px;
+  }
+  .sort_layout .sort_layout_cards .row {
+    justify-content: space-between !important;
+  }
+}
+@media (min-width: 768px) {
+  .statistics_gap .col-md-3 {
+    flex: 0 0 auto;
+    width: 24.5%;
+  }
 }
 @media (max-width: 767px) {
   .home .stores_cards .col-md-3 {
@@ -1566,6 +1829,96 @@ main.home::after {
   .promo .slide_control {
     justify-content: center;
   }
+  .affiliate_program .statistics .statistics_card_icon {
+    right: 22px;
+    top: 22px;
+    width: 25px;
+  }
+  .affiliate_program .statistics .statistics_card_balance {
+    font-size: 32px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .affiliate_program .statistics .statistics_card {
+    padding: 59px 20px 31px 27px;
+  }
+  .affiliate_program .statistics .statistics_title {
+    font-size: 30px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .affiliate_program .how_work .cards .card .card_contect {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .affiliate_program .how_work .cards .card {
+    padding: 28px 23px;
+  }
+  .affiliate_program .how_work .how_work_title {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .affiliate_program .how_work .how_work_title_sub {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .categories_boxes {
+    order: 1;
+  }
+  .categories_boxes_01 {
+    order: 3;
+    margin-bottom: 20px;
+  }
+  .categories_boxes_03 {
+    order: 2;
+  }
+  .similar_cards {
+    margin-left: 0;
+  }
+  .similar_cards_tab_mood {
+    margin-bottom: 15px;
+  }
+  .categories.second.icon_after::after {
+    top: -79px;
+    right: 0px;
+    width: 313px;
+    height: 426px;
+  }
+  .categories.icon_after::after {
+    content: "";
+    top: 20px;
+    left: 3px;
+    width: 162px;
+    height: 194px;
+  }
+  .categories .categories_row .categories_row_pre {
+    margin-right: 0;
+    width: 133px;
+  }
+  .similar_cards_tab_mood {
+    flex-wrap: wrap;
+  }
+  .categories .categories_row .categories_row_content {
+    max-width: 78%;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .sort_layout .sort_layout_cards .col-md-4 {
+    width: 49.3%;
+  }
+  .sort_layout .sort_layout_cards .similar_card {
+    max-width: 100%;
+  }
+  .sort_layout {
+    padding-left: 0;
+  }
+  .cashback_stores {
+    padding-left: 0px;
+  }
+  .cashback_stores .cashback_stores_cards .col-md-4 {
+    width: 49.5%;
+  }
 }
 @media (max-width: 580px) {
   .promo .swiper {
@@ -1597,7 +1950,7 @@ main.home::after {
   }
   header .navbar-nav .nav-item.dropdown {
     margin-right: 0;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
   }
   .home .see_all_stores {
     width: 280px;
@@ -1615,6 +1968,63 @@ main.home::after {
   .hero .tags .tag {
     font-size: 12px;
     padding-inline: 20px;
+  }
+  .affiliate_program {
+    padding-top: 45px;
+  }
+  .affiliate_program .hero {
+    margin-bottom: 0px;
+  }
+  .affiliate_program .how_work .how_work_title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .affiliate_program .how_work .how_work_title_sub {
+    margin-bottom: 24px;
+  }
+  .affiliate_program .hero .hero_img::after {
+    width: 258px;
+    height: 195px;
+    top: 0;
+  }
+  .affiliate_program .how_work .cards::after {
+    right: 8px;
+    top: 0px;
+    width: 306px;
+    height: 282px;
+  }
+  .affiliate_program .how_work .cards .col-md-3 {
+    flex: 0 0 0 auto;
+    width: 29%;
+  }
+  .affiliate_program .how_work .cards .card .card_break {
+    display: none;
+  }
+  .affiliate_program .how_work .cards .card {
+    padding: 20px 22px;
+  }
+  .affiliate_program .how_work .cards {
+    margin-bottom: 30px;
+  }
+  .affiliate_program .statistics .statistics_title {
+    font-size: 25px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .statistics_gap .col-md-3 {
+    width: 45%;
+  }
+  .statistics_gap .col-md-3 .statistics_card {
+    margin-bottom: 18px;
+  }
+  .affiliate_program .statistics .statistics_gap {
+    justify-content: space-around;
+  }
+  header .nav_search .btn_icon {
+    left: 14px;
+  }
+  header .nav_search input.form-control {
+    padding-left: 20px;
   }
 }
 @media (max-width: 500px) {
@@ -1658,5 +2068,145 @@ main.home::after {
   }
   .hero .tags {
     padding-inline: 0px;
+  }
+  .affiliate_program .statistics .statistics_card {
+    padding: 50px 20px 19px 22px;
+  }
+  .affiliate_program .statistics .statistics_card_balance_title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .affiliate_program .statistics .statistics_card_balance {
+    font-size: 28px;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+  .affiliate_program .statistics .statistics_card_icon {
+    right: 16px;
+    top: 16px;
+    width: 20px;
+  }
+  .affiliate_program .statistics .see_all_stores {
+    margin-bottom: 26px;
+  }
+  .statistics_gap .col-md-3 .statistics_card {
+    margin-bottom: 14px;
+  }
+  .affiliate_program .statistics .statistics_gap {
+    margin-bottom: 20px;
+  }
+  .affiliate_program .statistics .statistics_terms > .see_all_stores {
+    width: 255px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .affiliate_program .statistics .statistics_refer {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .mini_footer {
+    height: 120px;
+    padding: 37px 0px 20px;
+  }
+  header nav.navbar .navbar-brand {
+    width: 60px;
+  }
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+  .categories .categories_row .categories_row_pre {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .categories .categories_row .categories_row_content {
+    max-width: 78%;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .categories {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .store_details .store_details_title {
+    font-size: 30px;
+    line-height: 28px;
+    margin-top: 17px;
+    margin-bottom: 0px;
+  }
+  .categories_btn {
+    margin-bottom: 10px;
+  }
+  .cashback_stores .cashback_stores_cards .col-md-4 {
+    width: 100%;
+  }
+  .sort_layout .sort_layout_cards .col-md-4 {
+    width: 100%;
+  }
+  .store_details .store_details_title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 11px;
+  }
+  .sort_layout .sort_layout_pagination {
+    margin-bottom: 14px;
+  }
+  .cashback_stores .cashback_stores_cards {
+    margin-bottom: 42px;
+  }
+}
+@media (max-width: 420px) {
+  .affiliate_program .how_work .cards {
+    background: transparent;
+  }
+  .affiliate_program .how_work .cards .col-sm-3.col-6 {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .affiliate_program .how_work .cards .card {
+    background: #1C1F37 !important;
+  }
+  .hero {
+    padding: 0px 0;
+    padding-bottom: 13px;
+  }
+  .affiliate_program .how_work .how_work_title {
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 600;
+  }
+  .affiliate_program .how_work .how_work_title_sub {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .affiliate_program .statistics .statistics_title {
+    font-size: 22px;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+  .categories .categories_row .categories_row_content {
+    max-width: 75%;
+  }
+  .store_details .store_details_title {
+    font-size: 22px;
+    line-height: 21px;
+  }
+  .sort_layout .sort_head .sort_title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -0.018em;
+    color: #9DA1C1;
+    margin-right: 10px;
+  }
+  .cashback_stores .cashback_stores_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=main.css.map */
