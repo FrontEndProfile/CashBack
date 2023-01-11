@@ -199,7 +199,7 @@
     .navbar-nav.ms-auto {
       @include flex_center();
       // flex-direction: row;
-      // align-items: center;
+      align-items: flex-start !important;
       // justify-content: center;
       flex-wrap: wrap;
       padding-block: 14px;
@@ -209,6 +209,12 @@
       background-color: #3A3D5B;;
       height: fit-content;
       padding-block: 9px !important;
+      ul {
+        align-items: flex-start !important;
+        li,.ms-lg-auto {
+          width: 100%;
+        }
+      }
 
       .btn_ui {
         margin-block: 8px;
@@ -558,6 +564,7 @@ line-height: 17px;
 
       .promo_title {
         padding: 20px;
+        margin-inline:auto ;
       }
     }
   }
@@ -676,6 +683,20 @@ line-height: 17px;
   header .nav_search input.form-control {
     padding-left: 20px;
   }
+  .affiliate_program .how_work .cards {
+    justify-content: space-between;
+
+    background: transparent;
+    .col-sm-3.col-6.g-0 {
+      width: 48%;
+      margin-bottom: 12px;
+    }
+    .card {
+      background: #1C1F37;
+      min-height: 130px;
+    }
+  }
+
 
 }
 
@@ -872,5 +893,16 @@ line-height: 17px;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+  }
+  .affiliate_program .how_work .cards {
+    justify-content: space-between;
+
+    background: transparent;
+    .col-sm-3.col-6.g-0 {
+      width: 100%;
+    }
+    .card {
+      min-height: null;
+    }
   }
 }

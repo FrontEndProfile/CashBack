@@ -55,6 +55,7 @@ body,
 
 body {
   background: $Dark1;
+  overflow-x: hidden;
 }
 
 a {
@@ -1684,6 +1685,7 @@ color: #101221;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 120%;
+    z-index: -1;
   }
 }
 

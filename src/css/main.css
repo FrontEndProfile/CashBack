@@ -10,6 +10,7 @@ body,
 
 body {
   background: #141627;
+  overflow-x: hidden;
 }
 
 a {
@@ -1455,6 +1456,7 @@ main.home::after {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 120%;
+  z-index: -1;
 }
 
 @media (max-width: 1399px) {
@@ -1630,6 +1632,7 @@ main.home::after {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: flex-start !important;
     flex-wrap: wrap;
     padding-block: 14px;
   }
@@ -1639,6 +1642,12 @@ main.home::after {
     height: -moz-fit-content;
     height: fit-content;
     padding-block: 9px !important;
+  }
+  header .navbar_bottom ul {
+    align-items: flex-start !important;
+  }
+  header .navbar_bottom ul li, header .navbar_bottom ul .ms-lg-auto {
+    width: 100%;
   }
   header .navbar_bottom .btn_ui {
     margin-block: 8px;
@@ -1935,6 +1944,7 @@ main.home::after {
   }
   .promo .container .promo_title {
     padding: 20px;
+    margin-inline: auto;
   }
   body,
 .stores,
@@ -2025,6 +2035,18 @@ main.home::after {
   }
   header .nav_search input.form-control {
     padding-left: 20px;
+  }
+  .affiliate_program .how_work .cards {
+    justify-content: space-between;
+    background: transparent;
+  }
+  .affiliate_program .how_work .cards .col-sm-3.col-6.g-0 {
+    width: 48%;
+    margin-bottom: 12px;
+  }
+  .affiliate_program .how_work .cards .card {
+    background: #1C1F37;
+    min-height: 130px;
   }
 }
 @media (max-width: 500px) {
@@ -2208,5 +2230,12 @@ main.home::after {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+  }
+  .affiliate_program .how_work .cards {
+    justify-content: space-between;
+    background: transparent;
+  }
+  .affiliate_program .how_work .cards .col-sm-3.col-6.g-0 {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
