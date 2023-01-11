@@ -1612,6 +1612,10 @@ main.home::after {
     margin-top: 30px;
     margin-bottom: 5px;
   }
+  .hero .tags .tag {
+    font-size: 12px;
+    padding-inline: 20px;
+  }
 }
 @media (max-width: 500px) {
   .home .stores_cards .col-md-3 {
