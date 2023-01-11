@@ -140,6 +140,20 @@
     .container-lg.container-fluid {
       padding-inline: 18px;
     }
+    
+    header {
+      .nav-item.mr_16 {
+        margin-left: 0px;
+        margin-bottom: 25px;
+      }
+      .navbar-nav .nav-item .nav-link.mobo_link_01 {
+        padding-bottom: 0;
+      }
+      .navbar-nav .nav-item .nav-link.mobo_link_02 {
+        margin-bottom: 8px;
+      }
+      
+    } 
   }
   
   @media (max-width: 767px) {
@@ -233,6 +247,19 @@
     header .navbar-nav .nav-item.dropdown {
       margin-right: 0;
       margin-bottom: 4px;
+    }
+    .home .see_all_stores {
+      width: 280px;
+      height: 48px;
+      font-size: 15px;
+       img {
+        margin-right: 6px;
+        width: 28px;
+      }
+    }
+    .ads {
+      margin-top: 30px;
+      margin-bottom: 5px;
     }
   
   }
