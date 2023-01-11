@@ -22,6 +22,15 @@
       margin-left: 22px;
       padding-left: 30px;
     }
+    .sort_layout .sort_layout_cards .col-md-4 {
+      flex: 0 0 auto;
+      width: 303px;
+      margin-bottom: 6px;
+    }
+    .sort_layout .sort_layout_cards .row {
+      justify-content: space-evenly !important;
+    }
+
   }
   
   @media (max-width: 991px) {
@@ -127,6 +136,9 @@
       border-radius: 12px;
       padding: 12px 13px 10px 13px;
       min-height: 175px;
+    }
+    .container-lg.container-fluid {
+      padding-inline: 18px;
     }
   }
   
