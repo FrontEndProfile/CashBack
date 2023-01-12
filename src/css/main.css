@@ -2239,3 +2239,409 @@ main.home::after {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+
+
+/* Mudassir Mehdi Changes */
+
+.my-setting {
+  padding: 100px 0;
+}
+
+
+.my-setting .my-sidebar .nav-pills .nav-link {
+  color: #9DA1C1;
+  font-size: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.my-setting .my-sidebar .nav-pills .active {
+  background: #1C1F37;
+  border-radius: 45px;
+}
+
+.my-setting .sidebar-content .content-head h3 {
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  margin-bottom: 1.3rem;
+}
+.my-setting .sidebar-content .content-head p {
+  color: #9DA1C1;
+  letter-spacing: -0.018em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+}
+.my-setting .sidebar-content .content-head p a {
+  color: #810CF2;
+}
+
+.my-setting .sidebar-content .content-card {
+  background: #1C1F37;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.my-setting .sidebar-content .content-card span {
+  color: #9DA1C1;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+}
+
+.my-setting .sidebar-content .content-card h5 {
+  color: #FFFFFF;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: -0.018em;
+}
+
+.my-setting .sidebar-content .card-pink a {
+  color: #DB44D1;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+}
+
+.my-setting .sidebar-content .card-violet a {
+  color: #810CF2;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+}
+
+.my-setting .sidebar-content .content-card .card-heading h4 {
+  letter-spacing: -0.018em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.my-setting .sidebar-content .content-card .card-heading p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;  
+  color: #9DA1C1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.my-setting .sidebar-content .content-card form .form-label {
+  color: #9DA1C1;
+  letter-spacing: -0.018em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.my-setting .sidebar-content .content-card form .form-control {
+  background: #141627;
+  border-radius: 80px; 
+  border: none;
+  height: 40px;
+}
+
+.my-setting .sidebar-content .content-card form .form-control::placeholder {
+  color: #9DA1C1;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .content-card form h5 {
+  letter-spacing: -0.018em; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9DA1C1;
+}
+
+.my-setting .sidebar-content .content-card form .toggle-switch .form-check-input  {
+  background-color: transparent;
+  border: 2px solid #9DA1C1;
+  /* background-position: right center; */
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.my-setting .sidebar-content .content-card form .toggle-switch .form-check-input:checked {
+  border: 2px solid #810CF2;
+}
+
+.gradient-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
+  border-radius: 67px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #141627;
+  border: none;
+  width: 200px;
+  height: 50px;
+}
+
+.my-setting .sidebar-content .setting-table thead th {
+  letter-spacing: -0.018em;
+  color: #810CF2;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: 'Inter';
+}
+
+.my-setting .sidebar-content .setting-table tbody tr {
+  color: #9DA1C1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .setting-table th,
+.my-setting .sidebar-content .setting-table td {
+  padding: 20px;
+}
+
+.my-setting .sidebar-content table.table-bordered{
+  border:1px solid #9DA1C1;
+  margin-top:20px;
+}
+.my-setting .sidebar-content table.table-bordered > thead > tr > th{
+  border:1px solid #9DA1C1;
+}
+.my-setting .sidebar-content table.table-bordered > tbody > tr > td{
+  border:1px solid #9DA1C1;
+}
+
+.my-setting .sidebar-content .setting-textform .form-label {
+  color: #9DA1C1;
+  letter-spacing: -0.018em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.my-setting .sidebar-content .setting-textform .form-control {
+  border: 1px solid #9DA1C1;
+  background-color: transparent;
+}
+.comments .comment-items .comment-body {
+  background: #282C4B;
+  border-radius: 20px;
+  padding: 12px 1rem;
+  color: #9DA1C1;
+}
+.comments .comment-items p {
+  color: #9DA1C1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.comments .comment-items p span {
+  color: #810CF2;
+}
+
+.sort_layout_pagination {
+  margin-bottom: 99px;
+}
+ .sort_layout_pagination .pagination {
+  background: transparent;
+}
+ .sort_layout_pagination .pagination .page-item {
+  margin-right: 10px;
+}
+ .sort_layout_pagination .pagination .page-item .page-link {
+  background: transparent;
+  box-shadow: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .sort_layout_pagination .pagination .page-item.disabled .page-link {
+  color: #141627;
+  background: #DB44D1;
+}
+
+.click-to-copy-container .click-to-copy {
+  background: #1C1F37;
+  border-radius: 8px;
+}
+.click-to-copy-container .click-to-copy {
+  height: 40px;
+}
+.click-to-copy-container .click-to-copy input {
+  background-color: transparent !important;
+  border: none;
+  height: 40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  font-size: 14px;
+  line-height: 32px;
+  color: #9DA1C1;
+}
+.click-to-copy-container .click-to-copy button {
+  background: #282C4B;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  font-size: 14px;
+  line-height: 32px;
+  height: 40px;
+}
+.click-to-copy-container small {
+  color: #9DA1C1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+}
+
+.click-to-copy-container .click-to-copy-icon {
+  background: #1C1F37;
+  border-radius: 8px; 
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.my-setting .sidebar-content .payment-option .payment-head h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  letter-spacing: -0.018em;
+  text-decoration-line: underline;   
+}
+
+.my-setting .sidebar-content .payment-option .payment-head p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;  
+  letter-spacing: -0.018em; 
+  color: #9DA1C1;
+
+}
+ 
+.my-setting .sidebar-content .payment-method .payment-method-card {
+  background: #1C1F37;
+  padding: 32px 20px 0px 20px;
+border-radius: 12px;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card {
+  background: transparent !important;
+  border: none;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .card-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px; 
+  letter-spacing: -0.018em;  
+  color: #FFFFFF;
+}
+
+.my-setting .sidebar-content .payment-method .payment-method-card .card-img-top {
+  /* margin-bottom: 60px; */
+  height: 80px;
+}
+
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info .border-right  {
+  border-right: 1px solid #141627;
+}
+
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info small {
+  color: #9DA1C1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info h5 {
+  color: #9DA1C1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .my-setting {
+    padding: 50px 0;
+  }
+}
