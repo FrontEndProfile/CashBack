@@ -126,7 +126,7 @@
     <main class="my-setting setting_03">
           <div class="container">
              <div class="row"> 
-                  <div class="col-md-3 d-none d-md-block">
+                  <div class="col-lg-3  d-none d-lg-block">
                     <div class="my-sidebar">
                       <div class="nav flex-column nav-pills me-3">
                         <a href="#" class="nav-link mb-3"><img src="src/images/icon-home.png" class="me-3"> Главная</a> 
@@ -142,15 +142,48 @@
                       
                     </div>
                   </div>
-                  <div class="col-md-9">
+
+                  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkLabel"><img src="src/images/logo.png" height="50" alt="btn_icon"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="my-sidebar">
+                        <div class="nav flex-column nav-pills me-3">
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-home.png" class="me-3"> Главная</a> 
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-cart_round.png" class="me-3"> Все магазины</a> 
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-chart_fill.png" class="me-3"> Мой кэшбэк</a> 
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-script.png" class="me-3"> История выплат</a> 
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-money_round.png" class="me-3"> Мой кошелёк</a> 
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-user.png" class="me-3"> Доход от друзей</a> 
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-tap_click_force_touch.png" class="me-3"> История кликов</a> 
+                          <a href="#" class="nav-link mb-3"><img src="src/images/icon-promo-code.png" class="me-3"> Активировать промокод</a> 
+                          <a href="#" class="nav-link mb-3 active"><img src="src/images/icon-settings.png" class="me-3"> Настройки</a> 
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-9">
                     <div class="tab-content">
                       <div class="tab-pane fade show active">
                         <div class="sidebar-content">
-                            <div class="content-head mb-5">
-                                 <h3>Мои настройки</h3>
-                                 <p>
-                                  Здесь Вы можете изменить настройки учетной записи и сменить пароль. Пожалуйста, <a href="#">свяжитесь с нами,</a> если у вас есть вопросы.
-                                 </p>
+                            <div class="content-head mb-5  d-flex align-items-center">
+                                <div>
+                                  <h3>Мои настройки</h3>
+                                  <p>
+                                   Здесь Вы можете изменить настройки учетной записи и сменить пароль. Пожалуйста, <a href="#">свяжитесь с нами,</a> если у вас есть вопросы.
+                                  </p>
+                                </div>
+
+                                 <div class="d-block d-lg-none">
+                                  <button class="btn btn-primary  offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDark">
+                                    <img src="src/images/sidebar-icon.png" alt="" width="20" height="20">
+                                  </button>
+                                 </div>
+
                             </div>
 
                             <div class="row mb-5 click-to-copy-container">
