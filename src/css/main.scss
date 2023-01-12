@@ -2455,7 +2455,7 @@ position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			align-items: flex-start !important;
+			align-items: center;
 			flex-wrap: wrap;
 			padding-block: 14px;
 		}
@@ -2466,16 +2466,16 @@ position: relative;
 			height: fit-content;
 			padding-block: 9px !important;
 			ul {
-				align-items: flex-start !important;
-				li {
+				align-items: center;
+				li,.ms-lg-auto {
 					width: 100%;
-				}
-				.ms-lg-auto {
-					width: 100%;
+          text-align: center;
 				}
 			}
 			.btn_ui {
 				margin-block: 8px;
+        margin-inline: auto ;
+        
 			}
 		}
 		.navbar-nav {
@@ -2489,6 +2489,9 @@ position: relative;
 			}
 		}
 	}
+  header .navbar_link {
+    margin-right: 0;
+  }
 	.hero {
 		.hero_search_bar {
 			&::before {
