@@ -2354,7 +2354,7 @@ main.wallet_pg::after {
     display: none;
   }
   .collapse {
-    background: #3A3D5B;
+    background: #101221;
     z-index: 999;
     border-radius: 4px;
     padding-inline: 10px;
@@ -2390,7 +2390,7 @@ main.wallet_pg::after {
     padding-block: 14px;
   }
   header .navbar_bottom {
-    background-color: #3A3D5B;
+    background-color: #101221;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -2695,8 +2695,8 @@ main.wallet_pg::after {
   section .container {
     padding: 20px;
   }
-  body {
-    overflow-x: hidden;
+  body, * {
+    overflow-x: hidden !important;
   }
   .stores {
     overflow-x: hidden;
@@ -2985,4 +2985,4 @@ main.wallet_pg::after {
   .my-setting {
     padding: 50px 0;
   }
-}/*# sourceMappingURL=main.css.map */ 
+}/*# sourceMappingURL=main.css.map */

@@ -2431,7 +2431,7 @@ position: relative;
 		display: none;
 	}
 	.collapse {
-		background: #3A3D5B;
+		background: #101221;
 		z-index: 999;
 		border-radius: 4px;
 		padding-inline: 10px;
@@ -2468,7 +2468,7 @@ position: relative;
 			padding-block: 14px;
 		}
 		.navbar_bottom {
-			background-color: $background-color_4;
+			background-color: #101221;
 			height: -webkit-fit-content;
 			height: -moz-fit-content;
 			height: fit-content;
@@ -2845,8 +2845,8 @@ position: relative;
 			padding: 20px;
 		}
 	}
-	body {
-		overflow-x: hidden;
+	body, * {
+		overflow-x: hidden !important;
 	}
 	.stores {
 		overflow-x: hidden;
