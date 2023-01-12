@@ -2463,6 +2463,7 @@ line-height: 24px;
 .my-setting .sidebar-content .setting-textform .form-control {
   border: 1px solid #9DA1C1;
   background-color: transparent;
+  color: #9DA1C1;
 }
 .comments .comment-items .comment-body {
   background: #282C4B;
