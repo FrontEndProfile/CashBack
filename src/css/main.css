@@ -1984,6 +1984,198 @@ main.home::after {
   color: #9DA1C1;
 }
 
+main.wallet_pg {
+  position: relative;
+}
+main.wallet_pg::after {
+  position: absolute;
+  content: "";
+  width: 266px;
+  height: 97px;
+  left: 0;
+  top: 0;
+  background-image: url(../images/my_wallet_01.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(167.5px);
+  transform: rotate(-5.45deg);
+}
+
+.my-setting.wallet_pg .tab-content .sidebar-content {
+  position: relative;
+}
+.my-setting.wallet_pg .tab-content .sidebar-content::after {
+  position: absolute;
+  content: "";
+  width: 652.5px;
+  height: 411.75px;
+  left: -263px;
+  top: 23px;
+  background-image: url(../images/my_wallet_02.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(85px);
+  opacity: 0.2;
+}
+.my-setting.wallet_pg .tab-content .sidebar-content::before {
+  position: absolute;
+  content: "";
+  width: 579.57px;
+  height: 425.83px;
+  left: 320px;
+  top: 0;
+  background-image: url(../images/my_wallet_03.png);
+  transform: matrix(-0.94, 0.18, -0.38, -0.98, 0, 0);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(85px);
+  opacity: 0.2;
+}
+
+.after_blur .binance-card {
+  position: relative;
+}
+.after_blur .binance-card::before {
+  position: absolute;
+  content: "";
+  width: 579.57px;
+  height: 425.83px;
+  left: -89px;
+  top: 51px;
+  background-image: url(../images/my_wallet_04.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(167.5px);
+  transform: rotate(-100.62deg);
+}
+
+.content-card.after_blur {
+  position: relative;
+}
+.content-card.after_blur::after {
+  position: absolute;
+  content: "";
+  width: 942.83px;
+  height: 465.39px;
+  left: 22px;
+  top: 150px;
+  background-image: url(../images/my_wallet_01.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(167.5px);
+  transform: rotate(-60.76deg);
+}
+
+.my-setting.setting_03 {
+  position: relative;
+}
+.my-setting.setting_03::after {
+  position: absolute;
+  content: "";
+  width: 942.83px;
+  height: 465.39px;
+  left: -96px;
+  top: -227px;
+  background-image: url(../images/my_wallet_01.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: rotate(-19.76deg);
+  filter: blur(167.5px);
+}
+.my-setting.setting_03 .after_blur {
+  position: relative;
+}
+.my-setting.setting_03 .after_blur::after {
+  position: absolute;
+  content: "";
+  width: 547.93px;
+  height: 136.08px;
+  left: -36px;
+  top: 23px;
+  background-image: url(../images/my_wallet_02.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(85px);
+  transform: rotate(-0.57deg);
+  opacity: 0.4;
+}
+.my-setting.setting_03 .after_blur::before {
+  position: absolute;
+  content: "";
+  width: 547.93px;
+  height: 136.08px;
+  left: auto;
+  right: 44px;
+  top: 0;
+  background-image: url(../images/my_wallet_03.png);
+  transform: matrix(-0.82, 0.07, -0.99, -0.99, 0, 0);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(85px);
+  opacity: 0.2;
+}
+
+.my-setting.setting_02 {
+  position: relative;
+}
+.my-setting.setting_02::after {
+  position: absolute;
+  content: "";
+  width: 526.8px;
+  height: 364.4px;
+  left: -323px;
+  top: 120px;
+  background-image: url(../images/my-settings-01.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: rotate(-70.76deg);
+  filter: blur(167.5px);
+}
+
+.my-setting.setting_02 + .mini_footer {
+  position: relative;
+}
+.my-setting.setting_02 + .mini_footer::after {
+  position: absolute;
+  content: "";
+  width: 547.93px;
+  height: 136.08px;
+  left: 30%;
+  top: -50px;
+  background-image: url(../images/my_wallet_02.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(85px);
+  transform: rotate(-0.57deg);
+  opacity: 0.4;
+}
+.my-setting.setting_02 + .mini_footer::before {
+  position: absolute;
+  content: "";
+  width: 547.93px;
+  height: 136.08px;
+  left: auto;
+  right: 15%;
+  top: -50px;
+  background-image: url(../images/my_wallet_03.png);
+  transform: matrix(-0.82, 0.07, -0.99, -0.99, 0, 0);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(85px);
+  opacity: 0.2;
+}
+
 @media (max-width: 1399px) {
   .home .stores_cards .col-md-3 {
     padding: 0;
@@ -2111,6 +2303,30 @@ main.home::after {
   }
   .similar_cards .similar_title {
     margin-bottom: 20px;
+  }
+  .my-setting.setting_03::after {
+    width: 706.8px;
+    height: 335.4px;
+    left: -50px;
+    top: -255px;
+    transform: rotate(-19.76deg);
+    filter: blur(167.5px);
+  }
+  .my-setting.setting_03 .after_blur::before {
+    width: 425.9px;
+    height: 41.1px;
+  }
+  .content-card.after_blur::after {
+    width: 682.8px;
+    height: 297.4px;
+    left: -21px;
+    top: 84px;
+  }
+  .after_blur .binance-card::before {
+    width: 454.6px;
+    height: 376.8px;
+    left: -131px;
+    top: 38px;
   }
 }
 @media (max-width: 991px) {
