@@ -1,16 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-body,
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+/* ---HEADER  */
+/* ---HERO  */
+/* ---STORES  */
+/* ---ADS  */
+/* ---PROMO  */
+/*# sourceMappingURL=main.css.map */
+/* Mudassir Mehdi Changes */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background: #141627;
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-}
-
-body {
-  background: #141627;
-  overflow-x: hidden;
 }
 
 a {
@@ -35,7 +46,6 @@ html {
   margin-right: 16px;
 }
 
-/* ---HEADER  */
 header nav.navbar {
   background: #101221;
   height: 100px;
@@ -139,7 +149,7 @@ header .navbar_link_icon {
 }
 header .navbar_link {
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #9DA1C1;
   font-weight: 400;
   font-size: 14px;
@@ -178,7 +188,7 @@ header .btn_ui .navbar_link_icon {
   margin-top: -2px;
 }
 
-.btn_secondary, .btn_primary {
+.btn_secondary {
   background: #1C1F37;
   border-radius: 8px;
   font-weight: 700;
@@ -190,6 +200,14 @@ header .btn_ui .navbar_link_icon {
 }
 
 .btn_primary {
+  background: #1C1F37;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #DB44D1;
+  padding: 11.5px 43px;
   background-color: #DB44D1;
   color: #101221;
   padding-inline: 26px;
@@ -225,7 +243,6 @@ main.home::after {
   z-index: -1;
 }
 
-/* ---HERO  */
 .hero {
   padding: 91px 0;
   padding-bottom: 108px;
@@ -326,7 +343,6 @@ main.home::after {
   justify-content: center;
 }
 
-/* ---STORES  */
 .stores .stores_title {
   font-weight: 700;
   font-size: 36px;
@@ -341,7 +357,7 @@ main.home::after {
   width: 32px;
   height: 32px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-right: 18px;
 }
 .stores .stores_title::after {
@@ -500,7 +516,6 @@ main.home::after {
   width: 40px;
 }
 
-/* ---ADS  */
 .ads {
   margin-top: 96px;
   margin-bottom: 64px;
@@ -521,7 +536,7 @@ main.home::after {
   z-index: -1;
   filter: blur(167.5px);
 }
-/* ---PROMO  */
+
 .promo {
   position: relative;
 }
@@ -542,7 +557,23 @@ main.home::after {
   align-items: flex-end;
   justify-content: end;
 }
-.promo .swiper-button-next,
+.promo .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background: #1C1F37;
+  border-radius: 50%;
+  opacity: 1;
+  position: static;
+}
+.promo .swiper-button-next::after {
+  font-family: swiper-icons;
+  font-size: 8px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  color: #DB44D1;
+}
 .promo .swiper-button-prev {
   width: 40px;
   height: 40px;
@@ -551,7 +582,6 @@ main.home::after {
   opacity: 1;
   position: static;
 }
-.promo .swiper-button-next::after,
 .promo .swiper-button-prev::after {
   font-family: swiper-icons;
   font-size: 8px;
@@ -559,11 +589,6 @@ main.home::after {
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
-}
-.promo .swiper-button-next::after {
-  color: #DB44D1;
-}
-.promo .swiper-button-prev::after {
   color: #810CF2;
 }
 .promo .slide_btn_content {
@@ -637,16 +662,13 @@ main.home::after {
 .promo .promo__slide .swiper-slide .promo__slide_brand_discount .brand_name {
   font-weight: 700;
   font-size: 16px;
-  /* identical to box height, or 100% */
   letter-spacing: -0.018em;
-  /* New PINK */
   color: #DB44D1;
 }
 .promo .promo__slide .swiper-slide .promo__slide_brand_discount_small {
   font-weight: 400;
   font-size: 10px;
   line-height: 16px;
-  /* identical to box height, or 160% */
   letter-spacing: -0.018em;
   color: #9DA1C1;
   margin-bottom: 16px;
@@ -888,7 +910,11 @@ main.home::after {
   margin-bottom: 16px;
   text-align: center;
 }
-.affiliate_program .statistics .statistics_refer span, .affiliate_program .statistics .statistics_refer a {
+.affiliate_program .statistics .statistics_refer span {
+  color: #DB44D1;
+  text-decoration: underline;
+}
+.affiliate_program .statistics .statistics_refer a {
   color: #DB44D1;
   text-decoration: underline;
 }
@@ -906,9 +932,12 @@ main.home::after {
   line-height: 18px;
   letter-spacing: -0.018em;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
+.store_details {
+  position: relative;
+}
 .store_details .store_details_title {
   font-weight: 400;
   font-size: 36px;
@@ -921,6 +950,19 @@ main.home::after {
 }
 .store_details .store_details_title span {
   font-weight: 700;
+}
+.store_details::after {
+  position: absolute;
+  content: "";
+  width: 29%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/main_pg_end_shadow.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 120%;
+  z-index: -1;
 }
 
 .aliexpress_card {
@@ -1016,7 +1058,9 @@ main.home::after {
   max-width: 400px;
   margin-bottom: 0;
 }
-.categories .categories_row .categories_row_content span,
+.categories .categories_row .categories_row_content span {
+  color: #DB44D1;
+}
 .categories .categories_row .categories_row_content a {
   color: #DB44D1;
 }
@@ -1195,7 +1239,11 @@ main.home::after {
   background: transparent;
   color: currentColor;
 }
-.store_details_layout .accordion-button:not(.collapsed)::after,
+.store_details_layout .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(99%) saturate(6051%) hue-rotate(271deg) brightness(91%) contrast(112%);
+  width: 15px;
+  background-size: 100%;
+}
 .store_details_layout .accordion-button::after {
   filter: brightness(0) saturate(100%) invert(17%) sepia(99%) saturate(6051%) hue-rotate(271deg) brightness(91%) contrast(112%);
   width: 15px;
@@ -1223,7 +1271,7 @@ main.home::after {
 }
 .store_details_layout .accordion-item .accordion-button .accordion_icon img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-top: -5px;
 }
 .store_details_layout .accordion-item .accordion-button .accordion_title {
@@ -1294,7 +1342,7 @@ main.home::after {
 }
 .store_details_layout .accordion-item .accordion-body .accordion_list li a .accordion_icon img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-top: -5px;
 }
 .store_details_layout .accordion-item .accordion-body .accordion_list li a .accordion_title {
@@ -1395,26 +1443,6 @@ main.home::after {
   color: #141627;
   background: #DB44D1;
 }
-
-.cashback_stores {
-  padding-left: 50px;
-}
-.cashback_stores .cashback_stores_title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.018em;
-  color: #9DA1C1;
-  margin-bottom: 33px;
-}
-.cashback_stores .cashback_stores_cards {
-  margin-bottom: 80px;
-}
-.cashback_stores .cashback_stores_cards .col-md-4 {
-  flex: 0 0 auto;
-  width: 33%;
-}
-
 .sort_layout::before {
   position: absolute;
   content: "";
@@ -1442,21 +1470,518 @@ main.home::after {
   z-index: -1;
 }
 
-.store_details {
-  position: relative;
+.cashback_stores {
+  padding-left: 50px;
 }
-.store_details::after {
-  position: absolute;
-  content: "";
-  width: 29%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  background-image: url(../images/main_pg_end_shadow.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-y: 120%;
-  z-index: -1;
+.cashback_stores .cashback_stores_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  margin-bottom: 33px;
+}
+.cashback_stores .cashback_stores_cards {
+  margin-bottom: 80px;
+}
+.cashback_stores .cashback_stores_cards .col-md-4 {
+  flex: 0 0 auto;
+  width: 33%;
+}
+
+.my-setting {
+  padding: 100px 0;
+}
+.my-setting .my-sidebar .nav-pills .nav-link {
+  color: #9DA1C1;
+  font-size: 14px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.my-setting .my-sidebar .nav-pills .active {
+  background: #1C1F37;
+  border-radius: 45px;
+}
+.my-setting .sidebar-content .content-head h3 {
+  color: #FFFFFF;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  margin-bottom: 1.3rem;
+}
+.my-setting .sidebar-content .content-head p {
+  color: #9DA1C1;
+  letter-spacing: -0.018em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.my-setting .sidebar-content .content-head p a {
+  color: #810CF2;
+}
+.my-setting .sidebar-content .content-card {
+  background: #1C1F37;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.my-setting .sidebar-content .content-card span {
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.my-setting .sidebar-content .content-card h5 {
+  color: #FFFFFF;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .content-card .card-heading h4 {
+  letter-spacing: -0.018em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.my-setting .sidebar-content .content-card .card-heading p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+.my-setting .sidebar-content .content-card form .form-label {
+  color: #9DA1C1;
+  letter-spacing: -0.018em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.my-setting .sidebar-content .content-card form .form-control {
+  background: #141627;
+  border-radius: 80px;
+  border: none;
+  color: #9DA1C1;
+  height: 40px;
+}
+.my-setting .sidebar-content .content-card form .form-control::-moz-placeholder {
+  color: #9DA1C1;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .content-card form .form-control:-ms-input-placeholder {
+  color: #9DA1C1;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .content-card form .form-control::placeholder {
+  color: #9DA1C1;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .content-card form h5 {
+  letter-spacing: -0.018em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9DA1C1;
+}
+.my-setting .sidebar-content .content-card form .toggle-switch .form-check-input {
+  background-color: transparent;
+  border: 2px solid #9DA1C1;
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+.my-setting .sidebar-content .content-card form .toggle-switch .form-check-input:checked {
+  border: 2px solid #810CF2;
+}
+.my-setting .sidebar-content .card-pink a {
+  color: #DB44D1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.my-setting .sidebar-content .card-violet a {
+  color: #810CF2;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.my-setting .sidebar-content .setting-table thead th {
+  letter-spacing: -0.018em;
+  color: #810CF2;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Inter";
+}
+.my-setting .sidebar-content .setting-table tbody tr {
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .setting-table th {
+  padding: 20px;
+}
+.my-setting .sidebar-content .setting-table td {
+  padding: 20px;
+}
+.my-setting .sidebar-content table.table-bordered {
+  border: 1px solid #9DA1C1;
+  margin-top: 20px;
+}
+.my-setting .sidebar-content table.table-bordered > thead > tr > th {
+  border: 1px solid #9DA1C1;
+}
+.my-setting .sidebar-content table.table-bordered > tbody > tr > td {
+  border: 1px solid #9DA1C1;
+}
+.my-setting .sidebar-content .setting-textform .form-label {
+  color: #9DA1C1;
+  letter-spacing: -0.018em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.my-setting .sidebar-content .setting-textform .form-control {
+  border: 1px solid #9DA1C1;
+  background-color: transparent;
+  color: #9DA1C1;
+}
+.my-setting .sidebar-content .payment-option .payment-head h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  letter-spacing: -0.018em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.my-setting .sidebar-content .payment-option .payment-head p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card {
+  background: #1C1F37;
+  padding: 32px 20px 0px 20px;
+  border-radius: 12px;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card {
+  background: transparent !important;
+  border: none;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .card-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #FFFFFF;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info .border-right {
+  border-right: 1px solid #141627;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info small {
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info h5 {
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.my-setting .sidebar-content .payment-method .payment-method-card .card-img-top {
+  height: 80px;
+}
+
+.gradient-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
+  border-radius: 67px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #141627;
+  border: none;
+  width: 200px;
+  height: 50px;
+}
+
+.comments .comment-items .comment-body {
+  background: #282C4B;
+  border-radius: 20px;
+  padding: 12px 1rem;
+  color: #9DA1C1;
+}
+.comments .comment-items p {
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+.comments .comment-items p span {
+  color: #810CF2;
+}
+
+.sort_layout_pagination {
+  margin-bottom: 99px;
+}
+.sort_layout_pagination .pagination {
+  background: transparent;
+}
+.sort_layout_pagination .pagination .page-item {
+  margin-right: 10px;
+}
+.sort_layout_pagination .pagination .page-item .page-link {
+  background: transparent;
+  box-shadow: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sort_layout_pagination .pagination .page-item.disabled .page-link {
+  color: #141627;
+  background: #DB44D1;
+}
+
+.click-to-copy-container .click-to-copy {
+  background: #1C1F37;
+  border-radius: 8px;
+  height: 40px;
+}
+.click-to-copy-container .click-to-copy input {
+  background-color: transparent !important;
+  border: none;
+  height: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  font-size: 14px;
+  line-height: 32px;
+  color: #9DA1C1;
+}
+.click-to-copy-container .click-to-copy button {
+  background: #282C4B;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  font-size: 14px;
+  line-height: 32px;
+  height: 40px;
+}
+.click-to-copy-container small {
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+}
+.click-to-copy-container .click-to-copy-icon {
+  background: #1C1F37;
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.binance-option .binance-option-heading span {
+  background: #DB44D1;
+  border-radius: 67px;
+  display: inline-block;
+  color: #141627;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  padding: 4px 22px;
+  margin-bottom: 1rem;
+}
+.binance-option .binance-option-heading h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  color: #FFFFFF;
+}
+.binance-option .binance-option-heading p {
+  letter-spacing: -0.018em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9DA1C1;
+}
+.binance-option .binance-option-heading a {
+  color: #810CF2;
+}
+.binance-option .binance-card {
+  background: #1C1F37;
+  border-radius: 12px;
+  padding: 34px;
+}
+.binance-option .binance-card h5 {
+  color: #9DA1C1;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.018em;
+}
+.binance-option .binance-card p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+
+.shield-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+
+.binance-form .form-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+.binance-form .form-control {
+  background: #141627;
+  border-radius: 67px;
+  color: #9DA1C1;
+  border: none;
+  font-size: 14px;
+}
+.binance-form .form-control::-moz-placeholder {
+  color: #9DA1C1;
+  font-size: 14px;
+}
+.binance-form .form-control:-ms-input-placeholder {
+  color: #9DA1C1;
+  font-size: 14px;
+}
+.binance-form .form-control::placeholder {
+  color: #9DA1C1;
+  font-size: 14px;
+}
+
+.binance-total h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.018em;
+  color: #DB44D1;
+}
+.binance-total .total-list-item small {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
+.binance-total .total-list-item h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
 }
 
 @media (max-width: 1399px) {
@@ -1559,11 +2084,11 @@ main.home::after {
   .share .share_links {
     margin-bottom: 22px;
   }
-  .about_shop .about_shop_content {
-    line-height: 16px;
-  }
   .about_shop {
     max-width: 212px;
+  }
+  .about_shop .about_shop_content {
+    line-height: 16px;
   }
   .categories {
     padding-top: 22px;
@@ -1581,11 +2106,11 @@ main.home::after {
     margin-right: 0;
     width: 187px;
   }
-  .similar_cards .similar_title {
-    margin-bottom: 20px;
-  }
   .categories .categories_row .categories_row_content {
     max-width: 245px;
+  }
+  .similar_cards .similar_title {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -1621,6 +2146,8 @@ main.home::after {
   }
   header .nav-item.mr_16 {
     margin-right: 8px;
+    margin-left: 0px;
+    margin-bottom: 25px;
   }
   header .nav-item.dropdown {
     margin-right: 0;
@@ -1646,11 +2173,30 @@ main.home::after {
   header .navbar_bottom ul {
     align-items: flex-start !important;
   }
-  header .navbar_bottom ul li, header .navbar_bottom ul .ms-lg-auto {
+  header .navbar_bottom ul li {
+    width: 100%;
+  }
+  header .navbar_bottom ul .ms-lg-auto {
     width: 100%;
   }
   header .navbar_bottom .btn_ui {
     margin-block: 8px;
+  }
+  header .navbar-nav .nav-item .nav-link.mobo_link_01 {
+    padding-bottom: 0;
+  }
+  header .navbar-nav .nav-item .nav-link.mobo_link_02 {
+    margin-bottom: 8px;
+  }
+  .hero {
+    padding: 71px 0;
+    padding-bottom: 85px;
+    padding-top: 0px;
+    padding-inline: 20px;
+    padding-bottom: 28px;
+  }
+  .hero .hero_search_bar {
+    padding: 30px 33px 20px 30px;
   }
   .hero .hero_search_bar::before {
     position: absolute;
@@ -1664,13 +2210,6 @@ main.home::after {
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  .hero .hero_search_bar {
-    padding: 30px 33px 20px 30px;
-  }
-  .hero {
-    padding: 71px 0;
-    padding-bottom: 85px;
-  }
   .hero .hero_contet br {
     display: none;
   }
@@ -1683,32 +2222,12 @@ main.home::after {
   .container-lg.container-fluid {
     padding-inline: 18px;
   }
-  header .nav-item.mr_16 {
-    margin-left: 0px;
-    margin-bottom: 25px;
-  }
-  header .navbar-nav .nav-item .nav-link.mobo_link_01 {
-    padding-bottom: 0;
-  }
-  header .navbar-nav .nav-item .nav-link.mobo_link_02 {
-    margin-bottom: 8px;
-  }
-  .hero {
-    padding-top: 0px;
-    padding-inline: 20px;
-  }
   .affiliate_program .hero .hero_img::after {
     width: 339px;
     height: 275px;
   }
-  .hero {
-    padding-bottom: 28px;
-  }
   .affiliate_program .how_work .how_work_title_sub {
     margin-bottom: 33px;
-  }
-  .statistics_gap .col-md-3 {
-    width: 24%;
   }
   .affiliate_program .how_work .cards::after {
     width: 347px;
@@ -1716,6 +2235,9 @@ main.home::after {
   }
   .affiliate_program .how_work .cards .card .card_contect br {
     display: none;
+  }
+  .statistics_gap .col-md-3 {
+    width: 24%;
   }
   .categories_boxes {
     margin-left: auto;
@@ -1728,13 +2250,13 @@ main.home::after {
     margin-right: 10px;
     margin-top: 3px;
   }
-  .categories .categories_row.info {
-    margin-bottom: 10px;
-  }
   .categories .categories_row .categories_row_icon {
     width: 20px;
     height: 20px;
     margin: auto;
+  }
+  .categories .categories_row.info {
+    margin-bottom: 10px;
   }
   .similar_cards_tab_mood {
     display: flex;
@@ -1760,6 +2282,10 @@ main.home::after {
     line-height: 28px;
     margin-top: 50px;
     margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 12px;
   }
   .categories.icon_after::after {
     content: "";
@@ -1771,30 +2297,24 @@ main.home::after {
     width: 243px;
     height: 260px;
   }
-  .store_details .store_details_title {
-    font-size: 22px;
-    line-height: 24px;
-    margin-top: 40px;
-    margin-bottom: 12px;
-  }
-  .sort_layout .sort_layout_cards .col-md-4 {
-    width: 49%;
-    margin-bottom: 0px;
-  }
   .sort_layout {
     padding-left: 15px;
   }
   .sort_layout .sort_layout_cards {
     margin-bottom: 16px;
   }
-  .cashback_stores .cashback_stores_title {
-    margin-bottom: 20px;
+  .sort_layout .sort_layout_cards .col-md-4 {
+    width: 49%;
+    margin-bottom: 0px;
+  }
+  .sort_layout .sort_layout_cards .row {
+    justify-content: space-between !important;
   }
   .sort_layout .sort_layout_pagination {
     margin-bottom: 49px;
   }
-  .sort_layout .sort_layout_cards .row {
-    justify-content: space-between !important;
+  .cashback_stores .cashback_stores_title {
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -1826,6 +2346,9 @@ main.home::after {
     line-height: 28px;
     margin-bottom: 28px;
   }
+  .promo .slide_control {
+    justify-content: center;
+  }
   main.home {
     padding-bottom: 133px;
   }
@@ -1834,9 +2357,6 @@ main.home::after {
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
-  }
-  .promo .slide_control {
-    justify-content: center;
   }
   .affiliate_program .statistics .statistics_card_icon {
     right: 22px;
@@ -1856,13 +2376,13 @@ main.home::after {
     line-height: 29px;
     margin-bottom: 30px;
   }
+  .affiliate_program .how_work .cards .card {
+    padding: 28px 23px;
+  }
   .affiliate_program .how_work .cards .card .card_contect {
     font-weight: 600;
     font-size: 13px;
     line-height: 17px;
-  }
-  .affiliate_program .how_work .cards .card {
-    padding: 28px 23px;
   }
   .affiliate_program .how_work .how_work_title {
     font-size: 30px;
@@ -1887,6 +2407,7 @@ main.home::after {
   }
   .similar_cards_tab_mood {
     margin-bottom: 15px;
+    flex-wrap: wrap;
   }
   .categories.second.icon_after::after {
     top: -79px;
@@ -1905,22 +2426,19 @@ main.home::after {
     margin-right: 0;
     width: 133px;
   }
-  .similar_cards_tab_mood {
-    flex-wrap: wrap;
-  }
   .categories .categories_row .categories_row_content {
     max-width: 78%;
     font-size: 13px;
     line-height: 17px;
+  }
+  .sort_layout {
+    padding-left: 0;
   }
   .sort_layout .sort_layout_cards .col-md-4 {
     width: 49.3%;
   }
   .sort_layout .sort_layout_cards .similar_card {
     max-width: 100%;
-  }
-  .sort_layout {
-    padding-left: 0;
   }
   .cashback_stores {
     padding-left: 0px;
@@ -1930,14 +2448,14 @@ main.home::after {
   }
 }
 @media (max-width: 580px) {
+  .promo {
+    overflow-x: hidden;
+  }
   .promo .swiper {
     padding-inline: 30px;
   }
   .promo .promo__slide .swiper-slide {
     width: 90% !important;
-  }
-  section .container {
-    padding: 20px;
   }
   .promo .container {
     padding: 0px !important;
@@ -1946,9 +2464,13 @@ main.home::after {
     padding: 20px;
     margin-inline: auto;
   }
-  body,
-.stores,
-.promo {
+  section .container {
+    padding: 20px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .stores {
     overflow-x: hidden;
   }
   header .navbar-nav.ms-auto {
@@ -1961,6 +2483,12 @@ main.home::after {
   header .navbar-nav .nav-item.dropdown {
     margin-right: 0;
     margin-bottom: 0px;
+  }
+  header .nav_search .btn_icon {
+    left: 14px;
+  }
+  header .nav_search input.form-control {
+    padding-left: 20px;
   }
   .home .see_all_stores {
     width: 280px;
@@ -1985,6 +2513,11 @@ main.home::after {
   .affiliate_program .hero {
     margin-bottom: 0px;
   }
+  .affiliate_program .hero .hero_img::after {
+    width: 258px;
+    height: 195px;
+    top: 0;
+  }
   .affiliate_program .how_work .how_work_title {
     font-size: 25px;
     line-height: 25px;
@@ -1992,10 +2525,10 @@ main.home::after {
   .affiliate_program .how_work .how_work_title_sub {
     margin-bottom: 24px;
   }
-  .affiliate_program .hero .hero_img::after {
-    width: 258px;
-    height: 195px;
-    top: 0;
+  .affiliate_program .how_work .cards {
+    margin-bottom: 30px;
+    justify-content: space-between;
+    background: transparent;
   }
   .affiliate_program .how_work .cards::after {
     right: 8px;
@@ -2007,19 +2540,25 @@ main.home::after {
     flex: 0 0 0 auto;
     width: 29%;
   }
+  .affiliate_program .how_work .cards .card {
+    padding: 20px 22px;
+    background: #1C1F37;
+    min-height: 130px;
+  }
   .affiliate_program .how_work .cards .card .card_break {
     display: none;
   }
-  .affiliate_program .how_work .cards .card {
-    padding: 20px 22px;
-  }
-  .affiliate_program .how_work .cards {
-    margin-bottom: 30px;
+  .affiliate_program .how_work .cards .col-sm-3.col-6.g-0 {
+    width: 48%;
+    margin-bottom: 12px;
   }
   .affiliate_program .statistics .statistics_title {
     font-size: 25px;
     line-height: 24px;
     margin-bottom: 24px;
+  }
+  .affiliate_program .statistics .statistics_gap {
+    justify-content: space-around;
   }
   .statistics_gap .col-md-3 {
     width: 45%;
@@ -2027,32 +2566,15 @@ main.home::after {
   .statistics_gap .col-md-3 .statistics_card {
     margin-bottom: 18px;
   }
-  .affiliate_program .statistics .statistics_gap {
-    justify-content: space-around;
-  }
-  header .nav_search .btn_icon {
-    left: 14px;
-  }
-  header .nav_search input.form-control {
-    padding-left: 20px;
-  }
-  .affiliate_program .how_work .cards {
-    justify-content: space-between;
-    background: transparent;
-  }
-  .affiliate_program .how_work .cards .col-sm-3.col-6.g-0 {
-    width: 48%;
-    margin-bottom: 12px;
-  }
-  .affiliate_program .how_work .cards .card {
-    background: #1C1F37;
-    min-height: 130px;
-  }
 }
 @media (max-width: 500px) {
   .home .stores_cards .col-md-3 {
     flex: 0 0 auto;
     width: 100%;
+  }
+  .hero {
+    padding: 34px 0;
+    padding-bottom: 45px;
   }
   .hero .hero_title {
     font-size: 32px;
@@ -2061,10 +2583,6 @@ main.home::after {
   }
   .hero .hero_contet {
     margin-bottom: 70px;
-  }
-  .hero {
-    padding: 34px 0;
-    padding-bottom: 45px;
   }
   .hero .hero_search_bar {
     padding: 22px 23px 20px 23px;
@@ -2075,21 +2593,21 @@ main.home::after {
   .hero .hero_btn_icon img {
     width: 18px;
   }
-  .stores .stores_title .stores_title_icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
+  .hero .tags {
+    padding-inline: 0px;
   }
   .stores .stores_title {
     font-size: 5.5vw;
     line-height: 26px;
     margin-bottom: 50px;
   }
+  .stores .stores_title .stores_title_icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
   .stores .stores_title::after {
     top: 7px;
-  }
-  .hero .tags {
-    padding-inline: 0px;
   }
   .affiliate_program .statistics .statistics_card {
     padding: 50px 20px 19px 22px;
@@ -2111,9 +2629,6 @@ main.home::after {
   .affiliate_program .statistics .see_all_stores {
     margin-bottom: 26px;
   }
-  .statistics_gap .col-md-3 .statistics_card {
-    margin-bottom: 14px;
-  }
   .affiliate_program .statistics .statistics_gap {
     margin-bottom: 20px;
   }
@@ -2129,6 +2644,9 @@ main.home::after {
     line-height: 18px;
     margin-bottom: 10px;
   }
+  .statistics_gap .col-md-3 .statistics_card {
+    margin-bottom: 14px;
+  }
   .mini_footer {
     height: 120px;
     padding: 37px 0px 20px;
@@ -2140,6 +2658,10 @@ main.home::after {
     width: 1em;
     height: 1em;
   }
+  .categories {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
   .categories .categories_row .categories_row_pre {
     font-weight: 700;
     font-size: 14px;
@@ -2150,18 +2672,20 @@ main.home::after {
     font-size: 12px;
     line-height: 14px;
   }
-  .categories {
-    padding-bottom: 8px;
-    margin-bottom: 8px;
-  }
   .store_details .store_details_title {
     font-size: 30px;
     line-height: 28px;
     margin-top: 17px;
     margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 11px;
   }
   .categories_btn {
     margin-bottom: 10px;
+  }
+  .cashback_stores .cashback_stores_cards {
+    margin-bottom: 42px;
   }
   .cashback_stores .cashback_stores_cards .col-md-4 {
     width: 100%;
@@ -2169,20 +2693,14 @@ main.home::after {
   .sort_layout .sort_layout_cards .col-md-4 {
     width: 100%;
   }
-  .store_details .store_details_title {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 11px;
-  }
   .sort_layout .sort_layout_pagination {
     margin-bottom: 14px;
-  }
-  .cashback_stores .cashback_stores_cards {
-    margin-bottom: 42px;
   }
 }
 @media (max-width: 420px) {
   .affiliate_program .how_work .cards {
+    background: transparent;
+    justify-content: space-between;
     background: transparent;
   }
   .affiliate_program .how_work .cards .col-sm-3.col-6 {
@@ -2192,9 +2710,8 @@ main.home::after {
   .affiliate_program .how_work .cards .card {
     background: #1C1F37 !important;
   }
-  .hero {
-    padding: 0px 0;
-    padding-bottom: 13px;
+  .affiliate_program .how_work .cards .col-sm-3.col-6.g-0 {
+    width: 100%;
   }
   .affiliate_program .how_work .how_work_title {
     font-size: 20px;
@@ -2210,6 +2727,10 @@ main.home::after {
     font-size: 22px;
     line-height: 18px;
     margin-bottom: 18px;
+  }
+  .hero {
+    padding: 0px 0;
+    padding-bottom: 13px;
   }
   .categories .categories_row .categories_row_content {
     max-width: 75%;
@@ -2231,534 +2752,9 @@ main.home::after {
     font-size: 18px;
     line-height: 22px;
   }
-  .affiliate_program .how_work .cards {
-    justify-content: space-between;
-    background: transparent;
-  }
-  .affiliate_program .how_work .cards .col-sm-3.col-6.g-0 {
-    width: 100%;
-  }
-}/*# sourceMappingURL=main.css.map */
-
-
-
-
-
-
-
-
-/* Mudassir Mehdi Changes */
-
-.my-setting {
-  padding: 100px 0;
 }
-
-
-.my-setting .my-sidebar .nav-pills .nav-link {
-  color: #9DA1C1;
-  font-size: 14px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.my-setting .my-sidebar .nav-pills .active {
-  background: #1C1F37;
-  border-radius: 45px;
-}
-
-.my-setting .sidebar-content .content-head h3 {
-  color: #FFFFFF;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 32px;
-  letter-spacing: -0.018em;
-  margin-bottom: 1.3rem;
-}
-.my-setting .sidebar-content .content-head p {
-  color: #9DA1C1;
-  letter-spacing: -0.018em;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-}
-.my-setting .sidebar-content .content-head p a {
-  color: #810CF2;
-}
-
-.my-setting .sidebar-content .content-card {
-  background: #1C1F37;
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-
-.my-setting .sidebar-content .content-card span {
-  color: #9DA1C1;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-}
-
-.my-setting .sidebar-content .content-card h5 {
-  color: #FFFFFF;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 32px;
-letter-spacing: -0.018em;
-}
-
-.my-setting .sidebar-content .card-pink a {
-  color: #DB44D1;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-}
-
-.my-setting .sidebar-content .card-violet a {
-  color: #810CF2;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-}
-
-.my-setting .sidebar-content .content-card .card-heading h4 {
-  letter-spacing: -0.018em;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  color: #FFFFFF;
-}
-
-.my-setting .sidebar-content .content-card .card-heading p {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.018em;  
-  color: #9DA1C1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-}
-
-.my-setting .sidebar-content .content-card form .form-label {
-  color: #9DA1C1;
-  letter-spacing: -0.018em;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-}
-.my-setting .sidebar-content .content-card form .form-control {
-  background: #141627;
-  border-radius: 80px; 
-  border: none;
-  color: #9DA1C1;
-  height: 40px;
-}
-
-.my-setting .sidebar-content .content-card form .form-control::placeholder {
-  color: #9DA1C1;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.018em;
-}
-.my-setting .sidebar-content .content-card form h5 {
-  letter-spacing: -0.018em; 
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: #9DA1C1;
-}
-
-.my-setting .sidebar-content .content-card form .toggle-switch .form-check-input  {
-  background-color: transparent;
-  border: 2px solid #9DA1C1;
-  /* background-position: right center; */
-  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-}
-
-.my-setting .sidebar-content .content-card form .toggle-switch .form-check-input:checked {
-  border: 2px solid #810CF2;
-}
-
-.gradient-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
-  border-radius: 67px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: #141627;
-  border: none;
-  width: 200px;
-  height: 50px;
-}
-
-.my-setting .sidebar-content .setting-table thead th {
-  letter-spacing: -0.018em;
-  color: #810CF2;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  font-family: 'Inter';
-}
-
-.my-setting .sidebar-content .setting-table tbody tr {
-  color: #9DA1C1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.018em;
-}
-.my-setting .sidebar-content .setting-table th,
-.my-setting .sidebar-content .setting-table td {
-  padding: 20px;
-}
-
-.my-setting .sidebar-content table.table-bordered{
-  border:1px solid #9DA1C1;
-  margin-top:20px;
-}
-.my-setting .sidebar-content table.table-bordered > thead > tr > th{
-  border:1px solid #9DA1C1;
-}
-.my-setting .sidebar-content table.table-bordered > tbody > tr > td{
-  border:1px solid #9DA1C1;
-}
-
-.my-setting .sidebar-content .setting-textform .form-label {
-  color: #9DA1C1;
-  letter-spacing: -0.018em;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.my-setting .sidebar-content .setting-textform .form-control {
-  border: 1px solid #9DA1C1;
-  background-color: transparent;
-  color: #9DA1C1;
-}
-.comments .comment-items .comment-body {
-  background: #282C4B;
-  border-radius: 20px;
-  padding: 12px 1rem;
-  color: #9DA1C1;
-}
-.comments .comment-items p {
-  color: #9DA1C1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.018em;
-}
-.comments .comment-items p span {
-  color: #810CF2;
-}
-
-.sort_layout_pagination {
-  margin-bottom: 99px;
-}
- .sort_layout_pagination .pagination {
-  background: transparent;
-}
- .sort_layout_pagination .pagination .page-item {
-  margin-right: 10px;
-}
- .sort_layout_pagination .pagination .page-item .page-link {
-  background: transparent;
-  box-shadow: none;
-  width: 30px;
-  height: 30px;
-  border: none;
-  border-radius: 50%;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: -0.018em;
-  color: #9DA1C1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
- .sort_layout_pagination .pagination .page-item.disabled .page-link {
-  color: #141627;
-  background: #DB44D1;
-}
-
-.click-to-copy-container .click-to-copy {
-  background: #1C1F37;
-  border-radius: 8px;
-}
-.click-to-copy-container .click-to-copy {
-  height: 40px;
-}
-.click-to-copy-container .click-to-copy input {
-  background-color: transparent !important;
-  border: none;
-  height: 40px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.018em;
-  font-size: 14px;
-  line-height: 32px;
-  color: #9DA1C1;
-}
-.click-to-copy-container .click-to-copy button {
-  background: #282C4B;
-  border: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.018em;
-  font-size: 14px;
-  line-height: 32px;
-  height: 40px;
-}
-.click-to-copy-container small {
-  color: #9DA1C1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 32px;
-  letter-spacing: -0.018em;
-}
-
-.click-to-copy-container .click-to-copy-icon {
-  background: #1C1F37;
-  border-radius: 8px; 
-  width: 56px;
-  height: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.my-setting .sidebar-content .payment-option .payment-head h4 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #FFFFFF;
-  letter-spacing: -0.018em;
-  text-decoration-line: underline;   
-}
-
-.my-setting .sidebar-content .payment-option .payment-head p {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 24px;  
-  letter-spacing: -0.018em; 
-  color: #9DA1C1;
-
-}
- 
-.my-setting .sidebar-content .payment-method .payment-method-card {
-  background: #1C1F37;
-  padding: 32px 20px 0px 20px;
-border-radius: 12px;
-}
-.my-setting .sidebar-content .payment-method .payment-method-card .card {
-  background: transparent !important;
-  border: none;
-}
-.my-setting .sidebar-content .payment-method .payment-method-card .card-body .card-title {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px; 
-  letter-spacing: -0.018em;  
-  color: #FFFFFF;
-}
-
-.my-setting .sidebar-content .payment-method .payment-method-card .card-img-top {
-  /* margin-bottom: 60px; */
-  height: 80px;
-}
-
-.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info .border-right  {
-  border-right: 1px solid #141627;
-}
-
-.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info small {
-  color: #9DA1C1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 24px;
-  letter-spacing: -0.018em;
-}
-
-.my-setting .sidebar-content .payment-method .payment-method-card .card-body .payment-info h5 {
-  color: #9DA1C1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.018em;
-}
-
-.binance-option .binance-option-heading span {
-  background: #DB44D1;
-  border-radius: 67px;
-  display: inline-block;
-  color: #141627;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 24px;
-  letter-spacing: -0.018em;
-  padding: 4px 22px;
-  margin-bottom: 1rem;
-}
-.binance-option .binance-option-heading h3 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.018em; 
-  color: #FFFFFF;
-}
-.binance-option .binance-option-heading p {
-  letter-spacing: -0.018em; 
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #9DA1C1;
-}
-.binance-option .binance-option-heading a {
-  color: #810CF2;
-}
-.binance-option .binance-card {
-  background: #1C1F37;
-  border-radius: 12px; 
-  padding: 34px;
-}
-
-.binance-option .binance-card h5 {
-  color: #9DA1C1;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px; 
-  letter-spacing: -0.018em;
-}
-.binance-option .binance-card p {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px; 
-  letter-spacing: -0.018em; 
-  color: #9DA1C1;
-}
-.shield-text {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: -0.018em;
-  color: #9DA1C1;
-}
-
-.binance-form .form-label {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 18px; 
-  letter-spacing: -0.018em;  
-  color: #9DA1C1;
-}
-.binance-form  .form-control {
-  background: #141627;
-  border-radius: 67px;
-  color: #9DA1C1;  
-  border: none;
-  font-size: 14px;
-}
-.binance-form  .form-control::placeholder {
-  color: #9DA1C1;  
-  font-size: 14px;
-}
-
-.binance-total h4 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px; 
-  letter-spacing: -0.018em; 
-  color: #DB44D1;
-}
-
-.binance-total .total-list-item small {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 18px; 
-  letter-spacing: -0.018em; 
-  color: #9DA1C1;
-}
-
-.binance-total .total-list-item h5 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px; 
-  letter-spacing: -0.018em; 
-  color: #9DA1C1;
-}
-
-
 @media only screen and (max-width: 600px) {
   .my-setting {
     padding: 50px 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */
