@@ -2636,10 +2636,125 @@ border-radius: 12px;
   letter-spacing: -0.018em;
 }
 
+.binance-option .binance-option-heading span {
+  background: #DB44D1;
+  border-radius: 67px;
+  display: inline-block;
+  color: #141627;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  padding: 4px 22px;
+  margin-bottom: 1rem;
+}
+.binance-option .binance-option-heading h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.018em; 
+  color: #FFFFFF;
+}
+.binance-option .binance-option-heading p {
+  letter-spacing: -0.018em; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9DA1C1;
+}
+.binance-option .binance-option-heading a {
+  color: #810CF2;
+}
+.binance-option .binance-card {
+  background: #1C1F37;
+  border-radius: 12px; 
+  padding: 34px;
+}
 
+.binance-option .binance-card h5 {
+  color: #9DA1C1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px; 
+  letter-spacing: -0.018em;
+}
+.binance-option .binance-card p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px; 
+  letter-spacing: -0.018em; 
+  color: #9DA1C1;
+}
+.shield-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+  color: #9DA1C1;
+}
 
+.binance-form .form-label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px; 
+  letter-spacing: -0.018em;  
+  color: #9DA1C1;
+}
+.binance-form  .form-control {
+  background: #141627;
+  border-radius: 67px;
+  color: #9DA1C1;  
+  border: none;
+  font-size: 14px;
+}
+.binance-form  .form-control::placeholder {
+  color: #9DA1C1;  
+  font-size: 14px;
+}
 
+.binance-total h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px; 
+  letter-spacing: -0.018em; 
+  color: #DB44D1;
+}
 
+.binance-total .total-list-item small {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px; 
+  letter-spacing: -0.018em; 
+  color: #9DA1C1;
+}
+
+.binance-total .total-list-item h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px; 
+  letter-spacing: -0.018em; 
+  color: #9DA1C1;
+}
 
 
 @media only screen and (max-width: 600px) {
