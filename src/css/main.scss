@@ -2235,6 +2235,58 @@ position: relative;
   border-color: #1C1F37 !important;
 }
 
+.discounts {
+	padding-bottom: 23px;
+	border-bottom: 1px solid #1C1F37;
+	padding-top: 17px;
+	.discounts_icon {
+	  width: 25px;
+	  object-fit: contain;
+	  margin-right: 20px;
+	  display: block;
+	}
+	.discounts_title {
+	  font-weight: 700;
+	  font-size: 24px;
+	  line-height: 32px;
+	  letter-spacing: -0.018em;
+	  color: #DB44D1;
+	  margin-bottom: 0;
+	}
+  }
+  .discounts.sub {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: -0.018em;
+	color: #FFFFFF;
+	.discounts_title_sub {
+		font-weight: 400;
+font-size: 10px;
+
+/* identical to box height, or 320% */
+letter-spacing: -0.018em;
+
+/* Grey1 */
+color: #9DA1C1;
+	}
+	.discounts_title_sub_title {
+		font-weight: 700;
+font-size: 10px;
+line-height: 20px;
+letter-spacing: -0.018em;
+text-transform: uppercase;
+color: #9DA1C1;
+margin-bottom: 0;
+	}
+	.discounts_title {
+
+	}
+  }
+.discount_componet {
+	padding-bottom: 80px;
+}
+
 @media (max-width: 1399px) {
 	.home {
 		.stores_cards {
@@ -3212,3 +3264,4 @@ position: relative;
 		padding: 50px 0;
 	}
 }
+
