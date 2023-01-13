@@ -2279,8 +2279,27 @@ text-transform: uppercase;
 color: #9DA1C1;
 margin-bottom: 0;
 	}
-	.discounts_title {
-
+	.discounts_title_arrow {
+		width: 20px;
+	}
+	.discounts_title_sub_btn {
+		width: 150px;
+		height: 25px;
+		background: #DB44D1;
+		border-radius: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 20px;
+		letter-spacing: -0.018em;
+		text-transform: uppercase;
+		color: #141627;
+	}
+	.discounts_title_sub_btn.dark {
+		background: #1C1F37;
+		color: #DB44D1;
 	}
   }
 .discount_componet {
@@ -2611,7 +2630,6 @@ margin-bottom: 0;
 }
 
 .registeration-link a {
-
     color: #9DA1C1;
 }
 
@@ -3683,4 +3701,3 @@ margin-bottom: 0;
 		padding: 50px 0;
 	}
 }
-
