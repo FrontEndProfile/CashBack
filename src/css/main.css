@@ -2199,12 +2199,24 @@ main.wallet_pg::after {
   display: block;
 }
 .discounts .discounts_title {
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.018em;
-  color: #DB44D1;
-  margin-bottom: 0;
+  line-height: 32px;  
+  letter-spacing: -0.018em;  
+  color: #DB44D1; 
+}
+
+.discounts .discounts_title2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px; 
+  letter-spacing: -0.018em; 
+  color: #FFFFFF; 
+  margin-bottom: 0px;
 }
 
 .discounts.sub {
@@ -3128,7 +3140,7 @@ main.wallet_pg::after {
   section .container {
     padding: 20px;
   }
-  body, * {
+  body {
     overflow-x: hidden !important;
   }
   .stores {
@@ -3454,4 +3466,50 @@ main.wallet_pg::after {
   .my-setting {
     padding: 50px 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+
+.main-footer {
+  color: #9DA1C1;
+  padding: 50px 0;
+  background: #101221;
+}
+
+.main-footer .footer-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;  
+  text-align: center;
+  letter-spacing: -0.018em; 
+  color: #9DA1C1;
+  margin-bottom: 14px;
+}
+
+.main-footer .footer-year {
+  background: #9DA1C1;
+  color: #101221;
+  padding: 4px 22px;
+  border-radius: 60px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.018em;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.main-footer .copyright-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;  
+  text-align: center;
+  letter-spacing: -0.018em; 
+  color: #9DA1C1;
+}
