@@ -2544,6 +2544,12 @@ main.wallet_pg::after {
   .cashback_stores .cashback_stores_title {
     margin-bottom: 20px;
   }
+  .sort_layout .sort_layout_cards .similar_card {
+    max-width: 100%;
+  }
+  .offcanvas .collapse {
+    background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+  }
 }
 @media (min-width: 768px) {
   .statistics_gap .col-md-3 {
