@@ -1495,6 +1495,7 @@ main.home::after {
 
 .my-setting {
   padding: 100px 0;
+  overflow: hidden !important;
 }
 .my-setting .my-sidebar .nav-pills .nav-link {
   color: #9DA1C1;
