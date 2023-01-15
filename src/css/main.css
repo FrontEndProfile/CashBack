@@ -2269,6 +2269,12 @@ main.wallet_pg::after {
   text-transform: uppercase;
   color: #141627;
 }
+
+.discounts.sub .discounts_title_sub_btn:hover {
+  background: #1C1F37;
+  color: #DB44D1;
+}
+
 .discounts.sub .discounts_title_sub_btn.dark {
   background: #1C1F37;
   color: #DB44D1;
