@@ -123,6 +123,18 @@ header .navbar-nav .nav-item .nav-link {
   line-height: 32px;
   letter-spacing: -0.018em;
 }
+
+header  .navbar .navbar-nav .nav-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px; 
+  /* text-align: right; */
+  letter-spacing: -0.018em; 
+  color: #9DA1C1;
+}
+
 header .navbar-nav .nav-item .nav-link.dropdown-toggle {
   position: relative;
   padding-right: 14px;
