@@ -1,0 +1,211 @@
+.top-bar-options {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.018em;
+    color: #9DA1C1;
+}
+
+.fa-angle-left {
+    color: #5DCBF1;
+}
+
+.express-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 32px;
+    letter-spacing: -0.018em;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.first-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    letter-spacing: -0.018em;
+
+    /* Grey1 */
+
+    color: #9DA1C1;
+}
+
+.express-title2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.018em;
+    color: #FFFFFF;
+}
+
+.first-text2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.018em;
+    color: #9DA1C1;
+}
+
+.wrapper-right-side-card {
+    width: 266px;
+    margin: 40px auto;
+}
+
+.aliexpress-card {
+    width: 266px;
+    height: 320px;
+    background: #1C1F37;
+    border-radius: 12px;
+}
+
+.main-title-express-card {
+    margin-top: 50px;
+}
+
+.Newbie {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.018em;
+    color: #9DA1C1;
+    margin-top: 20px;
+}
+
+.price-express-card {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.018em;
+    color: #810CF2;
+    margin-top: 45px;
+}
+
+.express-card-button {
+    width: 230px;
+    height: 40px;
+    left: 1098px;
+    top: 544px;
+    background: linear-gradient(270deg, #DB44D1 0%, #B52CDF 41.98%, #810CF2 100%);
+    border-radius: 67px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.018em;
+    text-transform: uppercase;
+    color: #141627;
+    margin-top: 20px;
+}
+
+.middle-text-express {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.018em;
+    color: #9DA1C1;
+    margin-top: 20px;
+}
+
+.aliexpress-card::after {
+    content: "";
+    position: absolute;
+    /* top: -20px; */
+    /* left: 600px; */
+    background-image: url(../images/my_wallet_03.png);
+    background-size: cover;
+    z-index: -1;
+    width: 250px;
+    height: 200px;
+    bottom: 100px;
+    right: 200px;
+    filter: blur(130.5px);
+}
+
+.express-card-button::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/my_wallet_02.png);
+    background-size: cover;
+    z-index: -1;
+    width: 250px;
+    height: 200px;
+    right: 200px;
+    filter: blur(150.5px);
+}
+
+.e-box {
+    width: 129px;
+    height: 88px;
+    left: 0px;
+    top: 35px;
+    background: #1C1F37;
+    border-radius: 8px;
+}
+
+.e-box-img {
+    margin-top: 32px;
+}
+
+.e-box-bottom-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.018em;
+    color: #9DA1C1;
+    margin-top: 8px;
+}
+
+
+.express-wrapper {
+    margin: 80px 100px;
+}
+
+@media (max-width:600px) {
+    .express-wrapper {
+        margin: 0px 20px;
+    }
+}
+
+
+@media (max-width:300px) {
+    .express-wrapper {
+        margin: 0px 20px;
+    }
+
+    .aliexpress-card {
+        width: 240px;
+    }
+
+    .e-box {
+        width: 115px;
+    }
+
+    .express-card-button {
+        width: 200px;
+    }
+}

@@ -1,0 +1,9 @@
+.setting-table table {
+    border: 1px solid #1C1F37;
+    border-left: 0px solid;
+    border-right: 0px solid;
+}
+
+.only-th-color {
+    color: #9DA1C1 !important;
+}
