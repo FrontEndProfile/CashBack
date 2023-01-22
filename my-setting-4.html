@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CASHBACK || My Setting 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/my-setting-4.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+
+    <style>
+      body {
+        overflow-x: hidden !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER  -->
+    <header>
+      <nav class="navbar navbar-expand-lg py-0">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img class="w-100" src="src/images/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler border border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex nav_search" role="search">
+              <div class="btn_icon">
+                <img
+                  class="mw-100 img-fluid"
+                  src="src/images/search_left.png"
+                  alt="btn_icon"
+                />
+              </div>
+              <input
+                class="form-control shadow-none rounded rounded-0 bg-transparent"
+                type="search"
+                placeholder="Найти товары или магазин"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">Search</button>
+            </form>
+
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item mr_16">
+                <a class="ps-md-5 ps-0 mt-5 pt-md-0" href="#">
+                  <img src="src/images/icon_star_favorite.svg" alt="" />
+                </a>
+              </li>
+
+              <li class="nav-item mr_16">
+                <a class="ps-md-5 ps-0 mt-5 pt-md-0" href="#">
+                  <img src="src/images/icon_notification_bell.svg" alt="" />
+                </a>
+              </li>
+
+              <li class="nav-item dropdown mr_16">
+                <a
+                  class="nav-link mobo_link_02 ps-md-5 ps-0"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="src/images/icon_profile_image_round.svg" alt="" />
+                </a>
+                <ul class="dropdown-menu profile-dropdown">
+                  <div class="links-wrapper">
+                    <li class="link-single-item">
+                      <a class="profile-dropdown-item" href="#">
+                        <i class="fas fa-user hover-color p-icon"></i>
+                        <span class="link-text hover-color m-2"
+                          >Мой кабинет</span
+                        >
+                      </a>
+                    </li>
+                    <li class="link-single-item">
+                      <a class="profile-dropdown-item" href="#">
+                        <i
+                          class="fa-solid fa-money-bill hover-color p-icon"
+                        ></i>
+                        <span class="link-text hover-color m-2"
+                          >Мой кэшбэк</span
+                        >
+                      </a>
+                    </li>
+                    <li class="link-single-item">
+                      <a class="profile-dropdown-item" href="#">
+                        <i class="fas fa-shopping-bag hover-color p-icon"></i>
+
+                        <span class="link-text hover-color m-2"
+                          >Вывод средств</span
+                        >
+                      </a>
+                    </li>
+                    <li class="link-single-item">
+                      <a class="profile-dropdown-item" href="#">
+                        <i class="fa fa-tag hover-color p-icon"></i>
+                        <span class="link-text hover-color m-2">OXY-коды</span>
+                      </a>
+                    </li>
+                    <li class="link-single-item">
+                      <a class="profile-dropdown-item" href="#">
+                        <i class="fa-solid fa-user-plus hover-color p-icon"></i>
+                        <span class="link-text hover-color m-2"
+                          >Пригласи друга</span
+                        >
+                      </a>
+                    </li>
+                    <li class="link-single-item">
+                      <a class="profile-dropdown-item" href="#">
+                        <i
+                          class="fas fa-diamond hover-color p-icon"
+                          aria-hidden="true"
+                        ></i>
+                        <span class="link-text hover-color m-2"
+                          >Мой кабинет</span
+                        >
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item mr_16 mb-0">
+                <a class="ps-md-5 ps-0 mt-5 pt-md-0 nav-text" href="#">
+                  0 руб. / <span>0 руб.</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="d-block d-lg-none">
+              <nav class="navbar_bottom d-block py-4">
+                <div class="container align-items-center h-100">
+                  <ul
+                    class="d-flex align-items-center h-100 flex-wrap justify-content-center"
+                  >
+                    <li class="nav-item">
+                      <a href="store_details.html" class="navbar_link"
+                        ><span
+                          ><img
+                            class="navbar_link_icon"
+                            src="src/images/cart_round.png"
+                            alt=""
+                        /></span>
+                        Магазины с кэшбеком</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="stores.html" class="navbar_link"
+                        ><span
+                          ><img
+                            class="navbar_link_icon"
+                            src="src/images/shopping_cart_round.png"
+                            alt=""
+                        /></span>
+                        Поиск товара с кэшбеком</a
+                      >
+                    </li>
+                    <div class="ms-lg-auto">
+                      <li class="nav-item">
+                        <a href="affiliate_program.html" class="btn_ui"
+                          ><span
+                            ><img
+                              class="navbar_link_icon"
+                              src="src/images/profile_plus_round.png"
+                              alt="" /></span
+                          >Партнерская Программа</a
+                        >
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar_bottom">
+        <div class="container align-items-center h-100">
+          <ul class="d-flex align-items-center h-100">
+            <li class="nav-item">
+              <a href="store_details.html" class="navbar_link"
+                ><span
+                  ><img
+                    class="navbar_link_icon"
+                    src="src/images/cart_round.png"
+                    alt=""
+                /></span>
+                Магазины с кэшбеком</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="stores.html" class="navbar_link"
+                ><span
+                  ><img
+                    class="navbar_link_icon"
+                    src="src/images/shopping_cart_round.png"
+                    alt=""
+                /></span>
+                Поиск товара с кэшбеком</a
+              >
+            </li>
+            <div class="ms-auto">
+              <li class="nav-item">
+                <a href="affiliate_program.html" class="btn_ui"
+                  ><span
+                    ><img
+                      class="navbar_link_icon"
+                      src="src/images/profile_plus_round.png"
+                      alt="" /></span
+                  >Партнерская Программа</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <main class="my-setting setting_02">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="my-sidebar">
+              <div class="nav flex-column nav-pills me-3">
+                <a href="#" class="nav-link mb-3"
+                  ><img src="src/images/icon-home.png" class="me-3" />
+                  Главная</a
+                >
+                <a href="#" class="nav-link mb-3"
+                  ><img src="src/images/icon-cart_round.png" class="me-3" /> Все
+                  магазины</a
+                >
+                <a href="#" class="nav-link mb-3"
+                  ><img src="src/images/icon-chart_fill.png" class="me-3" /> Мой
+                  кэшбэк</a
+                >
+                <a href="#" class="nav-link mb-3"
+                  ><img src="src/images/icon-script.png" class="me-3" /> История
+                  выплат</a
+                >
+                <a href="#" class="nav-link mb-3"
+                  ><img src="src/images/icon-money_round.png" class="me-3" />
+                  Мой кошелёк</a
+                >
+                <a href="#" class="nav-link mb-3"
+                  ><img src="src/images/icon-user.png" class="me-3" /> Доход от
+                  друзей</a
+                >
+                <a href="#" class="nav-link mb-3"
+                  ><img
+                    src="src/images/icon-tap_click_force_touch.png"
+                    class="me-3"
+                  />
+                  История кликов</a
+                >
+                <a href="#" class="nav-link mb-3"
+                  ><img src="src/images/icon-promo-code.png" class="me-3" />
+                  Активировать промокод</a
+                >
+                <a href="#" class="nav-link mb-3 active"
+                  ><img src="src/images/icon-settings.png" class="me-3" />
+                  Настройки</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-start text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDark"
+            aria-labelledby="offcanvasDarkLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkLabel">
+                <img src="src/images/logo.png" height="50" alt="btn_icon" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="my-sidebar">
+                <div class="nav flex-column nav-pills me-3">
+                  <a href="#" class="nav-link mb-3"
+                    ><img src="src/images/icon-home.png" class="me-3" />
+                    Главная</a
+                  >
+                  <a href="#" class="nav-link mb-3"
+                    ><img src="src/images/icon-cart_round.png" class="me-3" />
+                    Все магазины</a
+                  >
+                  <a href="#" class="nav-link mb-3"
+                    ><img src="src/images/icon-chart_fill.png" class="me-3" />
+                    Мой кэшбэк</a
+                  >
+                  <a href="#" class="nav-link mb-3"
+                    ><img src="src/images/icon-script.png" class="me-3" />
+                    История выплат</a
+                  >
+                  <a href="#" class="nav-link mb-3"
+                    ><img src="src/images/icon-money_round.png" class="me-3" />
+                    Мой кошелёк</a
+                  >
+                  <a href="#" class="nav-link mb-3"
+                    ><img src="src/images/icon-user.png" class="me-3" /> Доход
+                    от друзей</a
+                  >
+                  <a href="#" class="nav-link mb-3"
+                    ><img
+                      src="src/images/icon-tap_click_force_touch.png"
+                      class="me-3"
+                    />
+                    История кликов</a
+                  >
+                  <a href="#" class="nav-link mb-3"
+                    ><img src="src/images/icon-promo-code.png" class="me-3" />
+                    Активировать промокод</a
+                  >
+                  <a href="#" class="nav-link mb-3 active"
+                    ><img src="src/images/icon-settings.png" class="me-3" />
+                    Настройки</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane fade show active">
+                <div class="sidebar-content">
+                  <div
+                    class="content-head mb-5 d-flex align-items-center flex-wrap flex-md-nowrap"
+                  >
+                    <div>
+                      <div class="d-block d-lg-none mb-3">
+                        <button
+                          class="btn btn-primary offcanvas-btn"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasDark"
+                          aria-controls="offcanvasDark"
+                        >
+                          <img
+                            src="src/images/sidebar-icon.png"
+                            alt=""
+                            width="20"
+                            height="20"
+                          />
+                        </button>
+                      </div>
+
+                      <h3>Мои настройки</h3>
+                      <p>
+                        Здесь Вы можете изменить настройки учетной записи и
+                        сменить пароль. Пожалуйста
+                        <a href="#">свяжитесь с нами,</a> если у вас есть
+                        вопросы.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 setting-table table-responsive mb-5">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="only-th-color" scope="col">Магазин</th>
+                            <th class="only-th-color" scope="col">
+                              Номер заказа
+                            </th>
+                            <th class="only-th-color" scope="col">Сума</th>
+                            <th class="only-th-color" scope="col">Кэшбэк</th>
+                            <th class="only-th-color" scope="col">Статус</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>Отклонено</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>Отклонено</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>Подтверждено</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>Отклонено</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>Подтверждено</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>Подтверждено</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>В ожидании</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">priceline.com 17.09.2020</th>
+                            <td>32613324275</td>
+                            <td>€0.00</td>
+                            <td>€0.00</td>
+                            <td>Подтверждено</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="sort_layout_pagination mb-2">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                              <a class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">...</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">14</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <div class="footer-text">
+              MEDIA <br />
+              BUYING TEAM <span>OXY</span>
+            </div>
+            <span class="footer-year">2023</span>
+            <div class="copyright-text">All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/swiper-bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
